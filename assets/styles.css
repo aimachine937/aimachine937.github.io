@@ -534,7 +534,7 @@ main { counter-reset: sec; }
 .stall.play .st-group + .st-group + .st-group .st-val { transition-delay: calc(3.2s + var(--i) * 120ms); }
 .stall.play .st-tie { opacity: 1; transition: opacity .6s ease 3.7s; }
 
-/* Skræddersyet tilbud */
+/* Tilbud på en anden opgave */
 .tailored { margin-top: 1.5rem; padding: 1.5rem 0 0; border-top: 1px solid var(--line); display: grid; gap: .5rem; }
 .tailored h3 { margin: 0; font-size: 1.15rem; }
 .tailored p { margin: 0; color: var(--muted); }

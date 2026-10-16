@@ -152,7 +152,7 @@
       <a href="#about">About</a>
     </nav>
     <div class="header-actions">
-      <a class="lang" href="/" hreflang="da" lang="da" aria-label="Dansk version">DA</a>
+      <a class="lang" href="/" hreflang="da" lang="da" aria-label="DA, dansk version">DA</a>
       <a class="btn btn-primary btn-small header-cta" href="#contact">Book a call</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -188,17 +188,19 @@
     <figure class="flow" aria-label="Example of a workflow">
       <p class="flow-title">What a typical setup looks like</p>
       <div class="flow-tabs" role="tablist" aria-label="Choose an example">
-        <button type="button" role="tab" aria-selected="true" aria-controls="flow-steps" tabindex="0" data-flow="mail">Customer email</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="flow-steps" tabindex="-1" data-flow="quote">Quote</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="flow-steps" tabindex="-1" data-flow="invoice">Invoice</button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="flow-steps" tabindex="-1" data-flow="meeting">Minutes</button>
+        <button type="button" role="tab" aria-selected="true" aria-controls="flow-panel" tabindex="0" data-flow="mail">Customer email</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="flow-panel" tabindex="-1" data-flow="quote">Quote</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="flow-panel" tabindex="-1" data-flow="invoice">Invoice</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="flow-panel" tabindex="-1" data-flow="meeting">Minutes</button>
       </div>
-      <ol id="flow-steps" role="tabpanel" aria-live="polite">
+      <div id="flow-panel" role="tabpanel" aria-live="polite">
+      <ol id="flow-steps">
         <li><strong>A customer emails you</strong><span>The email lands in the shared inbox.</span></li>
         <li><strong>The agent reads and sorts it</strong><span>It finds the customer and the order in your system.</span></li>
         <li><strong>A draft reply is ready</strong><span>Written in your tone, with the right details.</span></li>
         <li class="human"><strong>You approve and send</strong><span>A person always has the final say.</span></li>
       </ol>
+      </div>
       <figcaption class="flow-caption">Four examples, one principle. It also works for onboarding, reporting and reminders.</figcaption>
     </figure>
   </div>

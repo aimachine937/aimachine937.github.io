@@ -502,7 +502,6 @@ main { counter-reset: sec; }
 .st-bar i { position: absolute; inset: 0 auto 0 0; width: calc(var(--v) * 1%); background: var(--fjord); border-radius: 2px; transform-origin: left center; }
 .st-val { grid-area: val; text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; font-size: .95rem; }
 .st-funnel .st-step .st-bar { height: 18px; }
-.st-funnel .st-step:first-child .st-bar i { background: var(--ink-2); }
 /* Faldet fra 44 til 10: en stiplet skygge viser, hvor mange der stod før */
 .st-drop .st-bar::before { content: ""; position: absolute; inset: -3px auto -3px 0; width: 44%; border: 1px dashed var(--ink); border-radius: 2px; }
 .st-drop .st-lbl, .st-drop .st-val { color: var(--ink); font-weight: 700; }

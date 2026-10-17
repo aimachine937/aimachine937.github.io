@@ -255,12 +255,93 @@
   }
 
   // Ansøgningsrunde: ret kun datoen her. Efter datoen skiftes teksten automatisk.
-  var ROUND_END = "2026-11-16T23:59:59+01:00";
+  var ROUND_END = "2026-11-16T23:55:00+01:00";
   if (new Date() > new Date(ROUND_END)) {
     document.querySelectorAll("[data-round-closed]").forEach(function (el) {
       el.textContent = el.getAttribute("data-round-closed");
     });
   }
+
+  // SMV:Digital-kampagne: bånd, delt regning, tidslinje og tjek (runden 9. til 16. november 2026)
+  (function () {
+    var en = document.documentElement.lang === "en";
+    var OPENS = new Date("2026-10-26T00:00:00+01:00"), START = new Date("2026-11-09T09:00:00+01:00"), END = new Date(ROUND_END);
+    var now = new Date(), reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var days = function (a, b) { return Math.max(0, Math.ceil((b - a) / 864e5)); };
+    var dd = function (n) { return n === 1 ? (en ? "1 day" : "1 dag") : n + (en ? " days" : " dage"); };
+    var fmt = function (n) { return en ? n.toLocaleString("en-GB") + " DKK" : n.toLocaleString("da-DK") + " kr."; };
+
+    var bar = document.getElementById("cbar"), bt = document.getElementById("cbar-text");
+    if (bar) {
+      if (now > END) bar.hidden = true;
+      else if (bt) {
+        var tag = "<strong>SMV:Digital:</strong> ";
+        if (now < OPENS) bt.innerHTML = tag + (en ? "The draft opens in <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, and applications run 9 to 16 November. The state pays half of the advisory work."
+                                             : "Kladden åbner om <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, og der søges 9. til 16. november. Staten betaler halvdelen af rådgivningen.");
+        else if (now < START) bt.innerHTML = tag + (en ? "The draft is open. The application window opens in <span class=\"days\">" + dd(days(now, START)) + "</span>, on 9 November."
+                                                       : "Kladden er åben. Ansøgningsvinduet åbner om <span class=\"days\">" + dd(days(now, START)) + "</span>, 9. november.");
+        else bt.innerHTML = tag + (en ? "The application window is open and closes in <span class=\"days\">" + dd(days(now, END)) + "</span>, on 16 November."
+                                      : "Ansøgningsvinduet er åbent og lukker om <span class=\"days\">" + dd(days(now, END)) + "</span>, 16. november.");
+      }
+    }
+
+    var split = document.getElementById("split"), spend = document.getElementById("spend");
+    if (split && spend) {
+      var upd = function () {
+        var v = +spend.value, g = Math.min(v / 2, 150000);
+        document.getElementById("s-spend").textContent = fmt(v);
+        document.getElementById("s-grant").textContent = fmt(g);
+        document.getElementById("s-you").textContent = fmt(v - g);
+        split.style.setProperty("--state", (g / v * 100) + "%");
+      };
+      spend.addEventListener("input", upd); upd();
+    }
+
+    var tl = document.getElementById("tl");
+    var placeTl = function () {
+      if (!tl) return;
+      var items = [].slice.call(tl.querySelectorAll("li")), idx = 0;
+      items.forEach(function (li, i) { if (now >= new Date(li.getAttribute("data-from"))) idx = i; });
+      items.forEach(function (li, i) {
+        li.classList.toggle("done", i < idx); li.classList.toggle("now", i === idx);
+        var h = li.querySelector(".here"); if (h) h.parentNode.removeChild(h);
+        if (i === idx) li.insertAdjacentHTML("beforeend", "<span class=\"here\">" + (en ? "You are here" : "I er her") + "</span>");
+      });
+      var wide = window.matchMedia("(min-width: 900px)").matches, t = items[idx];
+      tl.setAttribute("data-pos", (wide ? t.offsetLeft : t.offsetTop) + "px");
+      if (tl.getAttribute("data-shown")) tl.style.setProperty("--fill", tl.getAttribute("data-pos"));
+      var lead = document.getElementById("tl-lead");
+      if (lead && now <= END) lead.textContent = en
+        ? "There are " + dd(days(now, END)) + " until the deadline on 16 November. A good project description takes time, so start with the assessment now."
+        : "Der er " + dd(days(now, END)) + " til ansøgningsfristen 16. november. En god projektbeskrivelse tager tid, så start med afklaringen nu.";
+    };
+    placeTl(); window.addEventListener("resize", placeTl);
+
+    var boxes = [].slice.call(document.querySelectorAll("#check input"));
+    if (boxes.length) {
+      var chk = function () {
+        var n = boxes.filter(function (b) { return b.checked; }).length, v = document.getElementById("verdict"), x = document.getElementById("verdict-text");
+        document.getElementById("meter").style.setProperty("--m", (n / boxes.length * 100) + "%");
+        if (n === boxes.length) { v.textContent = en ? "You look eligible to apply." : "I ser ud til at kunne søge."; x.textContent = en ? "The next step is a free call where we assess whether the project has a good chance and what the application should say." : "Næste skridt er en gratis samtale, hvor vi vurderer, om projektet har en god chance, og hvad der skal stå i ansøgningen."; }
+        else if (n === 0) { v.textContent = en ? "Tick the boxes to see if you can apply." : "Sæt flueben for at se, om I kan søge."; x.textContent = ""; }
+        else { v.textContent = en ? n + " of " + boxes.length + " requirements met." : n + " af " + boxes.length + " krav er opfyldt."; x.textContent = en ? "If you are missing a requirement, you can still start with an AI clarity session for 2,200 DKK and apply in a later round." : "Mangler I et eller flere krav, kan I stadig starte med en AI-afklaring til 2.200 kr. og søge i en senere runde."; }
+      };
+      boxes.forEach(function (b) { b.addEventListener("change", chk); }); chk();
+    }
+
+    var show = function (el) {
+      if (el.id === "split") el.classList.remove("pre");
+      if (el.id === "tl") { el.setAttribute("data-shown", "1"); el.style.setProperty("--fill", el.getAttribute("data-pos")); }
+    };
+    var targets = [split, tl].filter(Boolean);
+    if ("IntersectionObserver" in window && !reduce) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } }); }, { threshold: .35 });
+      targets.forEach(function (el) { io.observe(el); });
+      // Reserve: vis modulet, når det er i synsfeltet, også hvis observeren ikke melder
+      var seen = function () { targets.forEach(function (el) { var r = el.getBoundingClientRect(); if (r.top < innerHeight * .85 && r.bottom > 0) show(el); }); };
+      window.addEventListener("scroll", seen, { passive: true }); setTimeout(seen, 1500);
+    } else targets.forEach(show);
+  })();
 
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();

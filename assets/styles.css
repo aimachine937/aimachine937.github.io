@@ -649,3 +649,58 @@ main { counter-reset: sec; }
 .plain-steps { list-style: none; counter-reset: ps; margin: 0 0 1.25rem; padding: 0; border-top: 1px solid var(--ink); }
 .plain-steps li { counter-increment: ps; position: relative; padding: .85rem 0 .85rem 2.6rem; border-bottom: 1px solid var(--line); }
 .plain-steps li::before { content: counter(ps); position: absolute; left: 0; top: .8rem; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--fjord); color: #fff; font-weight: 700; font-size: .9rem; display: grid; place-items: center; }
+
+/* SMV:Digital-kampagne, runden 9. til 16. november 2026 (skjules af main.js efter runden) */
+.cbar { background: var(--night); color: var(--on-dark); font-size: .95rem; }
+.cbar[hidden] { display: none; }
+.cbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.25rem; min-height: 3rem; padding-top: .45rem; padding-bottom: .45rem; }
+.cbar p { margin: 0; max-width: none; }
+.cbar strong { color: #fff; }
+.cbar .days { color: var(--signal); font-weight: 700; }
+.cbar a { color: #fff; font-weight: 700; margin-left: auto; min-height: 44px; display: inline-flex; align-items: center; }
+
+.split-wrap { display: grid; gap: 2rem; }
+@media (min-width: 820px) { .split-wrap { grid-template-columns: 1fr 1.1fr; gap: 4rem; align-items: center; } }
+.split-card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1.75rem; display: grid; gap: 1.25rem; }
+.split-bar { position: relative; height: 64px; border-radius: 4px; overflow: hidden; background: var(--paper-2); border: 1px solid var(--ink); }
+.split-bar .state, .split-bar .you { position: absolute; top: 0; bottom: 0; display: flex; align-items: center; padding: 0 1rem; font-weight: 700; white-space: nowrap; }
+.split-bar .state { left: 0; background: var(--fjord); color: #fff; width: var(--state, 50%); overflow: hidden; z-index: 1; transition: width 1.1s cubic-bezier(.6,0,.2,1); }
+.split-bar .you { right: 0; color: var(--ink); }
+.split-card.pre .split-bar .state { width: 0; }
+.split-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; }
+.split-legend div { border-top: 1px solid var(--line); padding-top: .6rem; }
+.split-legend .k { display: block; font-size: .9rem; color: var(--muted); }
+.split-legend .v { font-family: var(--serif); font-size: 1.9rem; color: var(--ink); }
+.split-card input[type=range] { width: 100%; min-height: 44px; accent-color: var(--fjord); }
+.split-note { font-size: .92rem; color: var(--muted); margin: 0; }
+
+.tl-wrap { position: relative; }
+.tl { list-style: none; margin: 0; padding: 0; position: relative; display: grid; }
+.tl::before { content: ""; position: absolute; left: 12px; top: .5rem; bottom: 1.8rem; width: 2px; background: var(--line); }
+.tl-wrap .fill { position: absolute; z-index: 1; left: 12px; top: .5rem; width: 2px; height: var(--fill, 0); background: var(--fjord); transition: height 1.4s cubic-bezier(.6,0,.2,1); }
+.tl li { position: relative; padding: 0 0 1.6rem 2.4rem; }
+.tl li::before { content: ""; position: absolute; left: 6px; top: .3rem; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--sage); background: var(--paper); z-index: 2; transition: background .3s, border-color .3s; }
+.tl li.done::before { background: var(--fjord); border-color: var(--fjord); }
+.tl li.now::before { background: var(--signal); border-color: var(--signal); }
+.tl .d { display: block; font-size: .9rem; color: var(--muted); font-variant-numeric: normal; }
+.tl h3 { margin: .1rem 0 .2rem; font-size: 1.1rem; }
+.tl p { margin: 0; color: var(--ink-2); }
+.tl .here { display: inline-block; margin-top: .4rem; font-size: .85rem; font-weight: 700; background: var(--signal); color: var(--ink); padding: .1rem .5rem; border-radius: 3px; }
+@media (min-width: 900px) {
+  .tl { grid-template-columns: repeat(6, 1fr); }
+  .tl li { padding: 2.4rem .75rem 0 0; }
+  .tl li::before { left: 0; top: 0; }
+  .tl::before { left: 7px; right: 0; top: 7px; bottom: auto; width: auto; height: 2px; }
+  .tl-wrap .fill { left: 7px; top: 7px; height: 2px; width: var(--fill, 0); transition: width 1.4s cubic-bezier(.6,0,.2,1); }
+}
+
+.check-grid { display: grid; gap: 2rem; }
+@media (min-width: 820px) { .check-grid { grid-template-columns: 1.2fr 1fr; gap: 4rem; } }
+.check { display: grid; }
+.check label { display: flex; gap: .75rem; align-items: flex-start; padding: .8rem 0; border-top: 1px solid var(--line); cursor: pointer; min-height: 44px; }
+.check input { width: 22px; height: 22px; margin-top: .1rem; accent-color: var(--fjord); flex: none; }
+.meter { height: 8px; background: var(--paper-2); border-radius: 4px; overflow: hidden; margin: 1rem 0 .5rem; }
+.meter i { display: block; height: 100%; width: var(--m, 0%); background: var(--fjord); transition: width .4s ease; }
+.verdict { margin: 0 0 1rem; font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .split-bar .state, .tl-wrap .fill, .meter i, .tl li::before { transition: none !important; } }
+@media print { .cbar { display: none; } }

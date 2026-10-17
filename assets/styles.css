@@ -629,3 +629,13 @@ main { counter-reset: sec; }
   .steps.track.pre li.gate::before { background: var(--signal); border-color: var(--signal); }
   .steps.track.pre li:not(:last-child)::after { transform: none; }
 }
+
+/* Om: portræt følger teksten på desktop, workshopfoto i fuld bredde under */
+.photo-wide { margin: 3rem 0 0; }
+.photo-wide img { aspect-ratio: 4 / 3; object-position: 50% 45%; }
+@media (min-width: 640px) { .photo-wide img { aspect-ratio: 16 / 7; } }
+@media (min-width: 820px) {
+  .about { grid-template-columns: 360px 1fr; }
+  .about > picture { position: sticky; top: 6rem; }
+  .about .portrait { max-width: 360px; }
+}

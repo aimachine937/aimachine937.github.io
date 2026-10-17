@@ -752,7 +752,7 @@ main { counter-reset: sec; }
 /* Ét fokuspunkt pr. side: prisboksen i fjord */
 .price-box { background: var(--fjord); border-color: var(--fjord); color: var(--on-dark); }
 .price-box h3, .price-box .price { color: #fff; }
-.price-box p, .price-box .priv { color: #D3DEE1; } /* 6.4:1 på fjordblå; tokenet --on-dark-muted er lavet til nat, ikke fjord */
+.price-box p, .price-box .priv, .price-box .price small { color: #D3DEE1; } /* 6.4:1 på fjordblå; tokenet --on-dark-muted er lavet til nat, ikke fjord */
 .price-box a { color: #fff; }
 .price-box.entry .btn-primary { background: var(--paper); color: var(--ink); }
 .price-box.entry .btn-primary:hover { background: #fff; }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI-agenter, automatisering og Copilot sat op | Implement AI</title>
-<meta name="description" content="AI-agenter, automatiseringer og værktøjer som Copilot, ChatGPT og Claude sat op i din virksomhed, sikkert og til faste priser. Godkendt SMV:Digital-rådgiver.">
+<title>AI-konsulent for SMV’er: agenter og Copilot | Implement AI</title>
+<meta name="description" content="Implement AI er AI-konsulent for SMV’er: AI-agenter, automatisering og Copilot sat op sikkert og til faste priser. Godkendt SMV:Digital-rådgiver.">
 <link rel="canonical" href="https://www.implement-ai.dk/">
 <link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/">
 <link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="da_DK">
 <meta property="og:title" content="Implement AI | AI, der bliver sat op og taget i brug">
-<meta property="og:description" content="AI-agenter, automatiseringer og værktøjer som Copilot, ChatGPT og Claude sat op i din virksomhed, sikkert og til faste priser. Godkendt SMV:Digital-rådgiver.">
+<meta property="og:description" content="Implement AI er AI-konsulent for SMV’er: AI-agenter, automatisering og Copilot sat op sikkert og til faste priser. Godkendt SMV:Digital-rådgiver.">
 <meta property="og:url" content="https://www.implement-ai.dk/">
 <meta property="og:image" content="https://www.implement-ai.dk/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -43,7 +43,11 @@
         "width": 512,
         "height": 512
       },
-      "image": "https://www.implement-ai.dk/assets/og.png",
+      "image": [
+        "https://www.implement-ai.dk/assets/og.png",
+        "https://www.implement-ai.dk/assets/ibrahim.jpg",
+        "https://www.implement-ai.dk/assets/workshop-1.jpg"
+      ],
       "email": "is@implement-ai.dk",
       "vatID": "DK42538795",
       "taxID": "42538795",
@@ -77,6 +81,10 @@
         {
           "@type": "Offer",
           "name": "AI-afklaring",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI-afklaring"
+          },
           "price": "2200",
           "priceCurrency": "DKK",
           "priceSpecification": {
@@ -88,31 +96,58 @@
         },
         {
           "@type": "Offer",
-          "name": "Kortlægning af arbejdsgange"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Kortlægning af arbejdsgange"
+          }
         },
         {
           "@type": "Offer",
-          "name": "Opsætning af workflow"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Opsætning af workflow",
+            "url": "https://www.implement-ai.dk/automatisering/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "Opsætning af AI-agent"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Opsætning af AI-agent",
+            "url": "https://www.implement-ai.dk/ai-agenter/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "Ledelsesworkshop"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ledelsesworkshop",
+            "url": "https://www.implement-ai.dk/ledelsesworkshop/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "Workshops for medarbejdere"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Workshops for medarbejdere",
+            "url": "https://www.implement-ai.dk/ledelsesworkshop/#medarbejdere"
+          }
         },
         {
           "@type": "Offer",
-          "name": "Sikker AI-opsætning"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sikker AI-opsætning",
+            "url": "https://www.implement-ai.dk/copilot/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "AI-tilskudsforløb med SMV:Digital"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI-tilskudsforløb med SMV:Digital",
+            "url": "https://www.implement-ai.dk/smv-digital/"
+          }
         }
       ]
     },
@@ -120,7 +155,24 @@
       "@type": "Person",
       "@id": "https://www.implement-ai.dk/#ibrahim",
       "name": "Ibrahim Sleiman",
-      "jobTitle": "Selvstændig konsulent og direktør",
+      "jobTitle": "Selvstændig AI-konsulent og direktør",
+      "description": "Selvstændig AI-konsulent, der sætter AI-agenter, automatisering og Copilot op i danske små og mellemstore virksomheder. Godkendt rådgiver i SMV:Digital.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.implement-ai.dk/assets/ibrahim.jpg",
+        "width": 800,
+        "height": 1000
+      },
+      "url": "https://www.implement-ai.dk/#om",
+      "email": "is@implement-ai.dk",
+      "knowsAbout": [
+        "AI-agenter",
+        "Microsoft 365 Copilot",
+        "Copilot Studio",
+        "Power Automate",
+        "EU AI Act",
+        "SMV:Digital"
+      ],
       "worksFor": {
         "@id": "https://www.implement-ai.dk/#org"
       },
@@ -164,7 +216,7 @@
     },
     {
       "@type": "Question",
-      "name": "Kan jeg som privatperson eller selvstændig bruge jer?",
+      "name": "Kan jeg få hjælp som privatperson eller selvstændig?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ja. Du kan starte med en AI-afklaring og få sat et par workflows op i ChatGPT, Claude eller Gemini. Som privatperson får du et skriftligt tilbud med prisen inkl. moms."
@@ -175,7 +227,7 @@
       "name": "Hvad sker der, hvis vi stopper samarbejdet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Du beholder alt: opsætning, dokumentation og adgange. Der er ingen afhængighed af os, som du ikke selv har valgt."
+        "text": "I beholder alt: opsætning, dokumentation og adgange. I bliver kun afhængige af os, hvis I selv vælger det."
       }
     }
   ]
@@ -229,7 +281,7 @@
         <a class="btn btn-primary" href="#kontakt">Book 30 minutters samtale</a>
         <a class="btn btn-ghost" href="#ydelser">Se ydelser</a>
       </div>
-      <p class="hero-note">Den første samtale er gratis, og alle opgaver har en fast pris. Implement AI er godkendt rådgiver i SMV:Digital.</p>
+      <p class="hero-note">Den første samtale er gratis og foregår med <a href="#om">Ibrahim Sleiman</a>, som også bygger løsningen. Alle opgaver har en fast pris, og Implement AI er godkendt rådgiver i SMV:Digital.</p>
     </div>
 
     <figure class="flow" aria-label="Eksempel på et workflow">
@@ -248,7 +300,7 @@
         <li class="human"><strong>Du godkender og sender</strong><span>Et menneske har altid sidste ord.</span></li>
       </ol>
       </div>
-      <figcaption class="flow-caption">De fire eksempler følger samme princip, og det virker også til onboarding, rapportering og rykkere.</figcaption>
+      <figcaption class="flow-caption">Alle fire eksempler følger samme princip, som også kan bruges til onboarding, rapportering og rykkere.</figcaption>
     </figure>
   </div>
 </section>
@@ -263,7 +315,7 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Udgangspunkt</p>
-      <h2 id="h-situationer">De fleste er kommet i gang med AI. Få er kommet videre.</h2>
+      <h2 id="h-situationer">Næsten halvdelen har arbejdet med AI. Få er kommet videre.</h2>
       <p class="lead">Tallene viser, hvor det typisk stopper. Genkender du en af situationerne nedenfor, er det der, vi starter.</p>
     </div>
 
@@ -272,14 +324,14 @@
         <h3 class="st-h">Fra interesse til drift<sup><a href="#kilde-da-efb" aria-label="Kilde 1">1</a></sup></h3>
         <p class="st-note">Andel af alle danske SMV’er</p>
         <ol class="st-funnel"><li class="st-step" style="--v:60;--i:0"><span class="st-lbl">Finder AI relevant</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">60 %</span></li><li class="st-step" style="--v:44;--i:1"><span class="st-lbl">Har arbejdet med AI</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">44 %</span></li><li class="st-step st-drop" style="--v:10;--i:2"><span class="st-lbl">Har implementeret AI systematisk</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">10 %</span></li><li class="st-step" style="--v:2;--i:3"><span class="st-lbl">Har udviklet egne løsninger</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">2 %</span></li></ol>
-        <p class="st-gap"><strong>Her går de fleste i stå.</strong> 34 af 100 SMV’er har arbejdet med AI uden at implementere det systematisk. Tre ud af fire af dem, der bruger AI, har kun eksperimenteret med værktøjer som ChatGPT og Copilot.</p>
+        <p class="st-gap"><strong>Her går de fleste i stå.</strong> 34 af 100 SMV’er har arbejdet med AI uden at implementere det systematisk. Tre ud af fire SMV’er, der bruger AI, har kun eksperimenteret med værktøjer som ChatGPT og Copilot.</p>
       </div>
       <div class="st-col">
         <h3 class="st-h">Det, der stopper dem</h3>
         <div class="st-group"><h4>Blandt SMV’er, der bruger AI<sup><a href="#kilde-da-aau" aria-label="Kilde 2">2</a></sup></h4><ol class="st-bars"><li style="--v:74;--i:0"><span class="st-lbl">Medarbejdernes kompetencer</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">74 %</span></li><li style="--v:51;--i:1"><span class="st-lbl">Ledelsens forståelse af AI</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">51 %</span></li><li style="--v:45;--i:2"><span class="st-lbl">Datakvalitet</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">45 %</span></li><li style="--v:43;--i:3"><span class="st-lbl">Ingen etiske retningslinjer i virksomheden</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">43 %</span></li><li style="--v:41;--i:4"><span class="st-lbl">Anskaffelsesprisen er for høj</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">41 %</span></li></ol></div><div class="st-group"><h4>Blandt SMV’er, der har overvejet AI og ikke bruger det<sup><a href="#kilde-da-eurostat" aria-label="Kilde 3">3</a></sup></h4><ol class="st-bars"><li style="--v:82;--i:0"><span class="st-lbl">Mangler relevant ekspertise</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">82 %</span></li><li style="--v:48;--i:1"><span class="st-lbl">Uklare juridiske konsekvenser</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">48 %</span></li><li style="--v:45;--i:2"><span class="st-lbl">Bekymring for databeskyttelse</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">45 %</span></li><li style="--v:39;--i:3"><span class="st-lbl">Data findes ikke eller er for dårlige</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">39 %</span></li><li style="--v:31;--i:4"><span class="st-lbl">Passer ikke til eksisterende systemer</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">31 %</span></li></ol></div>
         <div class="st-group"><h4>Blandt Dansk Erhvervs SMV-medlemmer, der bruger AI eller vil i gang<sup><a href="#kilde-da-de" aria-label="Kilde 4">4</a></sup></h4><ol class="st-bars"><li style="--v:35;--i:0"><span class="st-lbl">Mangler medarbejderkompetencer</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">35 %</span></li><li style="--v:30;--i:1"><span class="st-lbl">Mangler tid</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">30 %</span></li><li style="--v:30;--i:2"><span class="st-lbl">Mangler indsigt og viden</span><span class="st-bar" aria-hidden="true"><i></i></span><span class="st-val">30 %</span></li></ol></div>
       </div>
-      <figcaption class="st-tie">Det er netop dér, vi hjælper: med viden og klare regler, så den første løsning når helt ud i drift.</figcaption>
+      <figcaption class="st-tie">Det er dér, vi hjælper: med viden og klare regler, så den første løsning kommer i drift.</figcaption>
     </figure>
     <details class="sources"><summary>Kilder</summary><ol><li id="kilde-da-efb"><a href="https://erhvervsfremmebestyrelsen.dk/sites/default/files/2026-01/SMV%27er%20og%20kunstig%20intelligens.pdf" rel="noopener">Danmarks Erhvervsfremmebestyrelse: SMV’er og kunstig intelligens. Potentialer, barrierer og behov. Virksomhedspanelet, efterår 2025, 4.128 SMV’er (HBS Economics).</a></li><li id="kilde-da-aau"><a href="https://www.aaudxp-cms.aau.dk/media/pzzl42ip/kunstig-intelligens-i-sma-og-mellemstore-virksomheder-muligheder-og-barrierer.pdf" rel="noopener">Christensen m.fl.: Kunstig intelligens i små og mellemstore virksomheder. Muligheder og barrierer. Danmarks Statistik for Aalborg og Aarhus Universitet (REPAI), maj 2025, 2.166 SMV’er.</a></li><li id="kilde-da-eurostat"><a href="https://ec.europa.eu/eurostat/databrowser/view/isoc_eb_ai/default/table" rel="noopener">Eurostat: Artificial intelligence by size class of enterprise (isoc_eb_ai), 2025, danske virksomheder med 10 til 249 ansatte, opdateret 15. juni 2026.</a></li><li id="kilde-da-de"><a href="https://www.danskerhverv.dk/politik-og-analyser/analyser/2026/februar/danske-virksomheders-brug--af-kunstig-intelligens-ai-i-2025/" rel="noopener">Dansk Erhverv: Danske virksomheders brug af kunstig intelligens (AI) i 2025. Analysenotat, oktober 2025. Medlemsundersøgelse august 2025, 848 virksomheder, repræsentativ for Dansk Erhvervs medlemmer.</a></li></ol></details>
     <ul class="situations">
@@ -309,9 +361,9 @@
     <div class="examples">
       <article class="example"><p class="who">Håndværk og service</p><h3>Tilbud fra forespørgsel</h3><p>Forespørgsler fra mail og hjemmeside samles, og en agent laver et tilbudsudkast ud fra prislisten og tidligere sager.</p><p class="before-after">Du retter og sender i stedet for at skrive fra bunden.</p></article>
       <article class="example"><p class="who">Rådgivning og kontor</p><h3>Svar fra egne dokumenter</h3><p>Medarbejdere spørger en agent, der svarer ud fra jeres procedurer, skabeloner og kontrakter og viser, hvor svaret står.</p><p class="before-after">Færre afbrydelser af dem, der ved mest.</p></article>
-      <article class="example"><p class="who">Handel og webshop</p><h3>Kundeservice med udkast</h3><p>Henvendelser om ordrestatus og returnering sorteres, ordren slås op, og et svarudkast er klar i indbakken.</p><p class="before-after">En person godkender, og svaret er ude på minutter.</p></article>
+      <article class="example"><p class="who">Handel og webshop</p><h3>Kundeservice med udkast</h3><p>Henvendelser om ordrestatus og returnering sorteres, ordren slås op, og et svarudkast er klar i indbakken.</p><p class="before-after">En person godkender, og svaret er ude på få minutter.</p></article>
     </div>
-    <p class="industries">Læs mere for <a href="/revisorer-og-bogholdere/">revisorer og bogholdere</a> og <a href="/haandvaerk-og-service/">håndværk og service</a>.</p>
+    <p class="industries">Se flere eksempler for <a href="/revisorer-og-bogholdere/">revisorer og bogholdere</a> og for <a href="/haandvaerk-og-service/">håndværk og service</a>.</p>
   </div>
 </section>
 
@@ -332,20 +384,20 @@
     <div class="section-head">
       <p class="eyebrow">Ydelser</p>
       <h2 id="h-ydelser">Det hjælper vi med</h2>
-      <p class="lead">Hver opgave får en fast pris, før vi går i gang. Læs mere om hver ydelse på dens egen side.</p>
+      <p class="lead">Hver opgave får en fast pris, før vi går i gang. Følg linket ved en ydelse for at læse mere.</p>
     </div>
     <ul class="prices service-list">
-      <li class="price-row"><h3>Kortlægning af arbejdsgange</h3><p>Vi gennemgår jeres processer og leverer en prioriteret liste over, hvad der kan automatiseres, med overslag på tid og pris.</p></li>
+      <li class="price-row"><h3>Kortlægning af arbejdsgange</h3><p>Vi gennemgår jeres arbejdsgange og leverer en prioriteret liste over det, der kan automatiseres, med overslag på tid og pris.</p></li>
       <li class="price-row"><h3><a href="/automatisering/">Opsætning af workflow</a></h3><p>En arbejdsgang automatiseret fra start til slut, så data flytter sig selv mellem mail, regneark, CRM og økonomisystem.</p></li>
       <li class="price-row"><h3><a href="/ai-agenter/">Opsætning af AI-agent</a></h3><p>En agent, der løser en afgrænset opgave i jeres systemer, med drift og vedligehold bagefter, hvis I vil have det.</p></li>
       <li class="price-row"><h3><a href="/copilot/">Sikker AI-opsætning</a></h3><p>Copilot, ChatGPT Business eller Claude Team sat op med styr på adgang, deling og en AI-politik.</p></li>
-      <li class="price-row"><h3><a href="/ledelsesworkshop/">Ledelsesworkshop</a></h3><p>En halv dag, hvor ejere og ledelse vælger de første AI-opgaver, med ejer, mål og budget.</p></li>
-      <li class="price-row"><h3><a href="/ledelsesworkshop/#medarbejdere">Workshops for medarbejdere</a></h3><p>Workshops, der giver medarbejderne mere viden om AI, bygget på jeres egne opgaver og de værktøjer, I allerede bruger.</p></li>
+      <li class="price-row"><h3><a href="/ledelsesworkshop/">Ledelsesworkshop</a></h3><p>En halv dag, hvor ejere og ledelse vælger de første AI-opgaver og giver hver opgave en ansvarlig, et mål og et budget.</p></li>
+      <li class="price-row"><h3><a href="/ledelsesworkshop/#medarbejdere">Workshops for medarbejdere</a></h3><p>Medarbejderne lærer at bruge AI i deres egne opgaver og i de værktøjer, I allerede bruger.</p></li>
       <li class="price-row"><h3><a href="/smv-digital/">AI-tilskudsforløb</a></h3><p>Analyse og implementeringsplan, hvor staten betaler halvdelen via SMV:Digital. For virksomheder med mindst 2 årsværk.</p></li>
-      <li class="price-row"><h3>Løbende sparring</h3><p>Et fast månedligt møde, hvor vi følger op på det, der kører, og tager næste forbedring.</p></li>
+      <li class="price-row"><h3>Løbende sparring</h3><p>Et fast månedligt møde, hvor vi følger op på det, der kører, og aftaler den næste forbedring.</p></li>
     </ul>
     <div class="price-box entry" id="priser">
-      <div><h3>Start med en AI-afklaring</h3><p>90 minutter online eller hos jer. Vi finder de opgaver, der sparer mest tid, og vælger værktøj. Du får en skriftlig plan bagefter.</p><p class="priv">Prisen gælder for virksomheder.</p></div>
+      <div><h3>Start med en AI-afklaring</h3><p>90 minutter online eller hos jer. Vi finder de opgaver, hvor AI sparer jer mest tid, og vælger værktøjet. Du får en skriftlig plan bagefter.</p><p class="priv">Prisen gælder for virksomheder.</p></div>
       <div class="price">2.200 kr.<small>ekskl. moms</small></div>
       <a class="btn btn-primary" href="#kontakt">Book en AI-afklaring</a>
     </div>
@@ -354,7 +406,7 @@
       <p>Så skriver vi et tilbud ud fra jeres opgave, jeres systemer og jeres tidsplan. Det har en fast pris og ligger klar inden for tre hverdage efter første samtale. <a href="/tilbud-eksempel/">Se et eksempel på et tilbud</a>.</p>
       <a class="btn btn-ghost" href="#kontakt" data-topic="Tilbud på en anden opgave">Bed om et tilbud på jeres opgave</a>
     </div>
-    <p class="price-foot">Alle priser på siden gælder for virksomheder og er ekskl. moms. Licenser og forbrug hos Microsoft, OpenAI, Anthropic, Google og automatiseringsplatforme betaler du direkte på din egen konto. Vi estimerer forbruget, før vi bygger.</p>
+    <p class="price-foot">Alle priser på siden gælder for virksomheder og er ekskl. moms. Licenser og forbrug hos Microsoft, OpenAI, Anthropic, Google og automatiseringsplatforme betaler du direkte på din egen konto. Vi anslår forbruget, før vi bygger.</p>
   </div>
 </section>
 
@@ -363,13 +415,13 @@
     <div class="section-head">
       <p class="eyebrow">Forløb</p>
       <h2 id="h-forloeb">Sådan foregår det</h2>
-      <p class="lead">Vi starter småt, får én ting i drift og udvider først, når den virker. <a href="/samarbejde/">Se hvad du får leveret</a>.</p>
+      <p class="lead">Vi starter i det små, får én ting i drift og udvider først, når den virker. <a href="/samarbejde/">Se, hvad du får leveret</a>.</p>
     </div>
-    <ol class="steps">
+    <ol class="steps track">
       <li><span class="dur">30 minutter</span><h3>Samtale</h3><p>Du fortæller, hvor tiden går. Vi siger ærligt, om AI er svaret.</p></li>
-      <li><span class="dur">1 til 2 uger</span><h3>Afklaring</h3><p>Vi vælger opgaven, værktøjet og en fast pris. Du ved, hvad du siger ja til. <a href="/tilbud-eksempel/">Se et eksempel på tilbud</a>.</p></li>
+      <li class="gate"><span class="dur">1 til 2 uger</span><h3>Afklaring</h3><p>Vi vælger opgaven og værktøjet og aftaler en fast pris. Du ved, hvad du siger ja til. <a href="/tilbud-eksempel/">Se et eksempel på et tilbud</a>.</p><p class="gate-note">Du siger ja, før vi bygger</p></li>
       <li><span class="dur">2 til 4 uger</span><h3>Opsætning</h3><p>Vi bygger og tester sammen med dem, der skal bruge løsningen.</p></li>
-      <li><span class="dur">Løbende</span><h3>Overlevering og drift</h3><p>Du får dokumentation og adgang til alt. Vil du have hjælp til driften, kan du det.</p></li>
+      <li><span class="dur">Løbende</span><h3>Overlevering og drift</h3><p>Du får dokumentation og adgang til alt. Vil du have hjælp til driften, kan du få det.</p></li>
     </ol>
   </div>
 </section>
@@ -379,25 +431,36 @@
     <div class="section-head">
       <p class="eyebrow">Om</p>
       <h2 id="h-om">Du arbejder direkte med Ibrahim</h2>
-      <p class="lead">Implement AI er drevet af Ibrahim Sleiman, selvstændig konsulent med speciale i, hvordan danske små og mellemstore virksomheder tager AI i brug i praksis.</p>
+      <p class="lead">Ibrahim Sleiman står bag Implement AI. Han er selvstændig AI-konsulent med speciale i, hvordan danske små og mellemstore virksomheder tager AI i brug.</p>
     </div>
     <div class="about">
-    <!-- Erstat med: <img class="portrait" src="/assets/ibrahim.jpg" alt="Ibrahim Sleiman" width="640" height="800"> -->
+    <picture>
+      <source type="image/avif" srcset="/assets/ibrahim.avif">
+      <img class="portrait" src="/assets/ibrahim.jpg" alt="Ibrahim Sleiman med korslagte arme og et smil på et kontor" width="800" height="1000" loading="lazy" decoding="async">
+    </picture>
     <div>
       <p>Jeg ser dagligt, hvad der får AI til at virke i praksis, og hvad der får det til at gå i stå. Den viden bruger jeg til at sætte løsninger op, der passer til den måde, I arbejder på i dag.</p>
       <p>Jeg har ingen juniorkonsulenter og ingen salgsafdeling. Den, du taler med i første samtale, er den, der bygger din løsning.</p>
       <ul class="facts">
-        <li>Selvstændig konsulent</li>
+        <li>Selvstændig AI-konsulent</li>
+        <li>Driver Implement AI ApS, CVR 42538795</li>
         <li>Godkendt rådgiver i SMV:Digital</li>
         <li>Arbejder i Microsoft 365, ChatGPT, Claude og Gemini</li>
         <li>Rådgiver på dansk og engelsk</li>
       </ul>
+      <figure class="photo">
+        <picture>
+          <source type="image/avif" srcset="/assets/workshop-1-700.avif 700w, /assets/workshop-1.avif 1400w" sizes="(min-width: 72rem) 690px, (min-width: 820px) calc(92vw - 384px), calc(100vw - 2.5rem)">
+          <img src="/assets/workshop-1-700.jpg" srcset="/assets/workshop-1-700.jpg 700w, /assets/workshop-1.jpg 1400w" sizes="(min-width: 72rem) 690px, (min-width: 820px) calc(92vw - 384px), calc(100vw - 2.5rem)" alt="Ibrahim står ved en skærm og præsenterer for omkring 20 deltagere, der sidder ved borde med bærbare computere." width="1400" height="1050" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Workshop om autonome agenter i Microsoft Copilot Studio.</figcaption>
+      </figure>
       <h3 class="about-sub">Det kan du regne med</h3>
       <ul class="principles-list">
         <li><strong>Dine konti, dine data.</strong> Alt bygges på dine egne konti og i dit miljø. Stopper samarbejdet, kører løsningerne videre uden os.</li>
-        <li><strong>Et menneske godkender.</strong> Agenter forbereder og foreslår. Det, der sendes til kunder eller bogføres, godkendes af en person hos jer.</li>
+        <li><strong>Et menneske godkender.</strong> Agenter forbereder og foreslår. En person hos jer godkender alt, der sendes til kunder eller bogføres.</li>
         <li><strong>GDPR og EU's AI-forordning.</strong> Vi afklarer, hvilke data der må behandles hvor, og hjælper med databehandleraftaler og retningslinjer for brug af AI. <a href="/ai-politik/">Læs om AI-politik</a>.</li>
-        <li><strong>Ærlige anbefalinger.</strong> Vi er ikke forhandler af licenser. Kan opgaven løses billigere eller uden AI, siger vi det.</li>
+        <li><strong>Ærlige anbefalinger.</strong> Vi sælger ikke licenser. Kan opgaven løses billigere eller uden AI, siger vi det.</li>
       </ul>
     </div>
   </div>
@@ -411,8 +474,8 @@
     <div class="faq">
       <details><summary>Holder I kurser for medarbejderne?</summary><p>Ja, som workshops bygget på jeres egne opgaver og de værktøjer, I allerede bruger. Vi udvikler dem ud fra, hvor AI hjælper mest hos jer, og holder dem gerne sammen med en fra ledelsen. Når vi sætter en løsning op, får dem, der skal bruge den, altid en gennemgang ved overleveringen.</p></details>
       <details><summary>Hvilket AI-værktøj skal vi vælge?</summary><p>Det afhænger af jeres systemer og opgaver. Arbejder I i Microsoft 365, er Copilot ofte det naturlige valg. Er I få brugere, kan ChatGPT eller Claude være et billigere og stærkere startpunkt. Det afklarer vi i første samtale.</p></details>
-      <details><summary>Kan jeg som privatperson eller selvstændig bruge jer?</summary><p>Ja. Du kan starte med en AI-afklaring og få sat et par workflows op i ChatGPT, Claude eller Gemini. Som privatperson får du et skriftligt tilbud med prisen inkl. moms.</p></details>
-      <details><summary>Hvad sker der, hvis vi stopper samarbejdet?</summary><p>Du beholder alt: opsætning, dokumentation og adgange. Der er ingen afhængighed af os, som du ikke selv har valgt.</p></details>
+      <details><summary>Kan jeg få hjælp som privatperson eller selvstændig?</summary><p>Ja. Du kan starte med en AI-afklaring og få sat et par workflows op i ChatGPT, Claude eller Gemini. Som privatperson får du et skriftligt tilbud med prisen inkl. moms.</p></details>
+      <details><summary>Hvad sker der, hvis vi stopper samarbejdet?</summary><p>I beholder alt: opsætning, dokumentation og adgange. I bliver kun afhængige af os, hvis I selv vælger det.</p></details>
     </div>
   </div>
 </section>
@@ -421,12 +484,14 @@
   <div class="wrap contact-grid">
     <div>
       <h2 id="h-kontakt">Book en samtale</h2>
-      <p class="lead">Fortæl kort, hvor tiden går i dag. Du får svar inden for én hverdag.</p>
+      <p class="lead">Fortæl kort, hvor tiden går i dag. Ibrahim svarer selv inden for én hverdag.</p>
       <ul class="promise">
         <li>30 minutter, gratis og uforpligtende</li>
+        <li>Du taler med Ibrahim, som også bygger løsningen</li>
         <li>Et ærligt bud på, om AI giver mening for dig</li>
         <li>Mail direkte: <a href="mailto:is@implement-ai.dk">is@implement-ai.dk</a></li>
       </ul>
+      <p class="contact-id">Implement AI ApS, CVR 42538795. Godkendt rådgiver i SMV:Digital.</p>
       <a class="btn btn-primary cta-signal book-direct" href="#" data-book>Vælg en tid i kalenderen</a>
     </div>
     <form class="form" id="contact-form">
@@ -436,7 +501,7 @@
       <label>Hvad handler det om?
         <select name="topic">
           <option>AI-afklaring og sparring</option>
-          <option>Opsætning af agent</option>
+          <option>Opsætning af AI-agent</option>
           <option>Opsætning af workflow</option>
           <option>Sikker AI-opsætning</option>
           <option>Workshops for medarbejdere</option>
@@ -447,7 +512,7 @@
       </label>
       <label>Besked<textarea name="message" required></textarea></label>
       <button class="btn btn-primary" type="submit">Skriv mailen</button>
-      <p class="form-note">Knappen åbner en færdigskrevet mail i dit mailprogram. Siden gemmer ingen oplysninger. Læs <a href="/privatliv.html">privatlivspolitikken</a>.</p>
+      <p class="form-note">Knappen åbner en færdigskrevet mail til is@implement-ai.dk i dit mailprogram. Siden gemmer ingen oplysninger. Læs <a href="/privatliv.html">privatlivspolitikken</a>.</p>
     </form>
   </div>
 </section>
@@ -456,9 +521,26 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>Implement AI ApS &nbsp;|&nbsp; CVR 42538795 &nbsp;|&nbsp; <a href="mailto:is@implement-ai.dk">is@implement-ai.dk</a></p>
-    <p><a href="/ai-agenter/">AI-agenter</a> &nbsp;|&nbsp; <a href="/automatisering/">Automatisering</a> &nbsp;|&nbsp; <a href="/copilot/">Copilot</a> &nbsp;|&nbsp; <a href="/smv-digital/">SMV:Digital</a> &nbsp;|&nbsp; <a href="/ledelsesworkshop/">Ledelsesworkshop</a> &nbsp;|&nbsp; <a href="/revisorer-og-bogholdere/">Revisorer og bogholdere</a> &nbsp;|&nbsp; <a href="/haandvaerk-og-service/">Håndværk og service</a> &nbsp;|&nbsp; <a href="/ai-politik/">AI-politik</a> &nbsp;|&nbsp; <a href="/samarbejde/">Samarbejde</a> &nbsp;|&nbsp; <a href="/tilbud-eksempel/">Eksempel på tilbud</a> &nbsp;|&nbsp; <a href="/viden/">Viden</a></p>
-    <p><a href="/privatliv.html">Privatlivspolitik</a> &nbsp;|&nbsp; <a href="/vilkaar/">Vilkår</a> &nbsp;|&nbsp; <a href="/en/" hreflang="en">English</a> &nbsp;|&nbsp; © <span id="year">2026</span></p>
+    <p class="foot-meta">Implement AI ApS &nbsp;|&nbsp; CVR 42538795 &nbsp;|&nbsp; <a href="mailto:is@implement-ai.dk">is@implement-ai.dk</a></p>
+    <ul class="foot-links">
+      <li><a href="/ai-agenter/">AI-agenter</a></li>
+      <li><a href="/automatisering/">Automatisering</a></li>
+      <li><a href="/copilot/">Copilot</a></li>
+      <li><a href="/smv-digital/">SMV:Digital</a></li>
+      <li><a href="/ledelsesworkshop/">Ledelsesworkshop</a></li>
+      <li><a href="/revisorer-og-bogholdere/">Revisorer og bogholdere</a></li>
+      <li><a href="/haandvaerk-og-service/">Håndværk og service</a></li>
+      <li><a href="/ai-politik/">AI-politik</a></li>
+      <li><a href="/samarbejde/">Samarbejde</a></li>
+      <li><a href="/tilbud-eksempel/">Eksempel på tilbud</a></li>
+      <li><a href="/viden/">Viden</a></li>
+    </ul>
+    <ul class="foot-links">
+      <li><a href="/privatliv.html">Privatlivspolitik</a></li>
+      <li><a href="/vilkaar/">Vilkår</a></li>
+      <li><a href="/en/" hreflang="en">English</a></li>
+      <li class="foot-meta">© <span id="year">2026</span></li>
+    </ul>
   </div>
 </footer>
 

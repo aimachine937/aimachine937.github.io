@@ -102,6 +102,15 @@
     }, { threshold: 0.25 });
     so.observe(stall);
   }
+  // Forløb: sporet tegnes trin for trin første gang, listen kommer i syne. Teksten står fast.
+  var track = document.querySelector(".steps.track");
+  if (track && "IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    track.classList.add("pre");
+    var to = new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) { track.classList.replace("pre", "play"); to.disconnect(); }
+    }, { threshold: 0.3 });
+    to.observe(track);
+  }
   document.querySelectorAll('a[href^="#kilde-"]').forEach(function (a) {
     a.addEventListener("click", function () { var d = document.querySelector("details.sources"); if (d) d.open = true; });
   });
@@ -175,13 +184,13 @@
   var guide = document.getElementById("guide-form");
   if (guide) {
     var G = lang === "en" ? {
-      start: ["AI clarity session","90 minutes where we find the two or three tasks that save the most time and choose the tool. You get a written plan.","2,200 DKK excl. VAT","/en/#services"],
+      start: ["AI clarity session","A 90-minute session where we find the two or three tasks that save the most time and choose the tool. You get a written plan.","2,200 DKK excl. VAT","/en/#services"],
       lead:  ["Leadership workshop","Half a day where owners and leadership choose the first two AI tasks, with owner, goal, budget and timeline.","from 23,750 DKK excl. VAT","/en/leadership-workshop/"],
       task_ms: ["AI agent or workflow setup","We build it in Copilot Studio or Power Automate, so it uses the permissions you already have in Microsoft 365. Live in 2 to 4 weeks.","from 14,250 DKK excl. VAT","/en/ai-agents/"],
       task_no: ["AI agent or workflow setup","We build it in n8n or Make with ChatGPT or Claude, so it works with Google Workspace and other systems. Live in 2 to 4 weeks.","from 14,250 DKK excl. VAT","/en/ai-agents/"],
       secure_ms: ["Secure Copilot setup","We review access and sharing in SharePoint and Teams, write your AI policy and switch Copilot on for the first group.","from 23,750 DKK excl. VAT","/en/copilot/"],
       secure_no: ["Secure AI setup","We set up ChatGPT Business, Claude Team or Gemini with access, data rules and an AI policy in place.","from 23,750 DKK excl. VAT","/en/copilot/"],
-      grant: "With at least 2 full time equivalents, the analysis and plan can be an SMV:Digital programme with a 50 % grant.",
+      grant: "With at least 2 full-time equivalents, the analysis and plan can be an SMV:Digital programme with a 50 % grant.",
       solo: "As a sole trader or private individual, you always get the price incl. VAT in the offer.",
       mid: "With 10 or more staff, a leadership workshop is often the best first step, so the direction is decided before anything is built."
     } : {

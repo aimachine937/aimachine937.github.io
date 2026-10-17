@@ -764,7 +764,7 @@ main { counter-reset: sec; }
 .template p { margin: 0 0 .6rem; }
 .template ul { margin: 0 0 .6rem; padding-left: 1.2rem; }
 .template li { margin: .3rem 0; }
-.template .ph, .note .ph { background: var(--paper-3); padding: 0 .3em; border-radius: 2px; white-space: nowrap; }
+.template .ph, .note .ph { background: var(--paper-3); color: var(--ink-2); padding: 0 .3em; border-radius: 2px; white-space: nowrap; }
 .template .note, .article .note { font-size: .92rem; color: var(--muted); }
 .template-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: 0 0 .5rem; }
 .copy-template { background: var(--fjord); color: #fff; border-color: var(--fjord); }

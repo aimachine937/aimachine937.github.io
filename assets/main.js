@@ -252,6 +252,50 @@
     });
   }
 
+  // Diagrammer i undersidernes hero: samme tændings-animation som forsidens panel
+  document.querySelectorAll(".flow ol").forEach(function (ol) { if (ol.id !== "flow-steps") ol.classList.add("run"); });
+
+  // Kopiér tekst med reserve for browsere uden Clipboard API
+  function copyText(text, status, okMsg, failMsg) {
+    var ok = function () { status.textContent = okMsg; };
+    var fallback = function () {
+      var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "absolute"; ta.style.left = "-9999px";
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); ok(); } catch (err) { status.textContent = failMsg; }
+      document.body.removeChild(ta);
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(ok, fallback); else fallback();
+  }
+
+  // Skabelonen: kopiér hele teksten som ren tekst uden forklaringerne
+  var tpl = document.getElementById("template");
+  if (tpl) {
+    tpl.querySelector(".copy-template").addEventListener("click", function () {
+      var parts = [];
+      tpl.querySelectorAll("h3, ul, p:not(.note):not(.template-tools)").forEach(function (el) {
+        if (el.tagName === "UL") { el.querySelectorAll("li").forEach(function (li) { parts.push("- " + li.textContent.trim()); }); parts.push(""); }
+        else if (el.tagName === "H3") { parts.push(el.textContent.trim().toUpperCase()); }
+        else { parts.push(el.textContent.trim()); parts.push(""); }
+      });
+      copyText(parts.join("\n"), tpl.querySelector(".copy-status"), "Kopieret. Indsæt den i jeres eget dokument.", "Kopieringen mislykkedes. Markér teksten, og kopiér den selv.");
+    });
+  }
+
+  // På denne side: vises, når heroen er rullet ud af syne, og følger læsningen
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    var heroEl = document.querySelector(".hero");
+    var links = [].slice.call(toc.querySelectorAll("a"));
+    var heads = links.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); });
+    var updToc = function () {
+      var y = window.scrollY + 140, cur = -1;
+      heads.forEach(function (h, i) { if (h && h.offsetTop <= y) cur = i; });
+      links.forEach(function (a, i) { a.classList.toggle("is-current", i === cur); });
+      toc.classList.toggle("show", !heroEl || window.scrollY > heroEl.offsetTop + heroEl.offsetHeight - 80);
+    };
+    window.addEventListener("scroll", updToc, { passive: true }); window.addEventListener("resize", updToc); updToc();
+  }
+
   // SMV:Digital-kampagne: bånd, delt regning, tidslinje og tjek (runden 9. til 16. november 2026)
   (function () {
     var en = document.documentElement.lang === "en";

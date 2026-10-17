@@ -39,7 +39,7 @@
         (d.get("message") || "");
       window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       // Kvittering med reserve: åbner mailprogrammet ikke (fx ved webmail), kan beskeden kopieres
-      var en = lang === "en", TEL = "+4526202747", TEL_SHOWN = "+45 26 20 27 47";
+      var en = lang === "en";
       var full = (en ? "To: " : "Til: ") + EMAIL + "\n" + (en ? "Subject: " : "Emne: ") + subject + "\n\n" + body;
       var done = document.getElementById("form-done");
       if (!done) {
@@ -50,8 +50,7 @@
         "<p>" + (en ? "Your email program should now open with the message ready. Press send there." : "Nu skulle dit mailprogram åbne med beskeden klar. Tryk send derinde.") + "</p>" +
         "<p><strong>" + (en ? "Nothing happened?" : "Skete der ikke noget?") + "</strong> " +
         (en ? "Copy the message and send it from your own email to " : "Kopiér beskeden, og send den fra din egen mail til ") +
-        "<a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a>" + (en ? ", or call " : ", eller ring på ") +
-        "<a href=\"tel:" + TEL + "\">" + TEL_SHOWN.replace(/ /g, "\u00a0") + "</a>.</p>" +
+        "<a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a>.</p>" +
         "<button type=\"button\" class=\"btn btn-small copy-msg\">" + (en ? "Copy the message" : "Kopiér beskeden") + "</button> <span class=\"copy-status\" aria-live=\"polite\"></span>";
       var status = done.querySelector(".copy-status");
       done.querySelector(".copy-msg").addEventListener("click", function () {

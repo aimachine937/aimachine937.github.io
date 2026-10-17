@@ -640,3 +640,7 @@ main { counter-reset: sec; }
 .quote-card figcaption { font-size: .95rem; font-weight: 700; color: var(--ink); }
 @media (min-width: 820px) { .quote-card { margin-left: calc(360px + 4rem); } }
 .foot-desc { color: var(--on-dark); font-weight: 500; }
+
+/* Forsiden: H1 bærer søgeordet, sloganet står som stor tekst under */
+.hero-kicker { font-family: inherit; font-size: 1rem; font-weight: 700; line-height: 1.4; letter-spacing: 0; color: var(--fjord); margin: 0 0 1rem; max-width: none; }
+.hero-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.6rem, 7vw, 5.25rem); line-height: 1.02; letter-spacing: -0.025em; text-wrap: balance; color: var(--ink); margin: 0 0 .6em; max-width: none; }

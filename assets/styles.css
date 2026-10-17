@@ -784,3 +784,9 @@ main { counter-reset: sec; }
   .toc a.is-current { color: var(--ink); border-left-color: var(--fjord); font-weight: 700; }
 }
 @media print { .toc { display: none; } }
+
+/* Foto i undersidernes hero (brancher) */
+.hero-photo { margin: .5rem 0 0; }
+.hero-photo picture, .hero-photo img { display: block; width: 100%; height: auto; }
+.hero-photo img { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--paper-2); }
+@media (max-width: 959px) { .hero-photo { margin-top: 1.5rem; } }

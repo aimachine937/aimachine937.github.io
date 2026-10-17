@@ -65,14 +65,32 @@
         (lang === "en" ? "Phone: " : "Telefon: ") + (d.get("phone") || "") + "\n\n" +
         (d.get("message") || "");
       window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      // Kvittering med reserve: åbner mailprogrammet ikke (fx ved webmail), kan beskeden kopieres
+      var en = lang === "en", TEL = "+4526202747", TEL_SHOWN = "+45 26 20 27 47";
+      var full = (en ? "To: " : "Til: ") + EMAIL + "\n" + (en ? "Subject: " : "Emne: ") + subject + "\n\n" + body;
       var done = document.getElementById("form-done");
       if (!done) {
-        done = document.createElement("p"); done.id = "form-done"; done.className = "form-done"; done.setAttribute("role", "status");
+        done = document.createElement("div"); done.id = "form-done"; done.className = "form-done"; done.setAttribute("role", "status");
         form.appendChild(done);
       }
-      done.textContent = lang === "en"
-        ? "Your email program should now open with the message ready. Press send there. Nothing happened? Write to " + EMAIL + "."
-        : "Nu skulle dit mailprogram åbne med beskeden klar. Tryk send derinde. Skete der ikke noget? Skriv til " + EMAIL + ".";
+      done.innerHTML =
+        "<p>" + (en ? "Your email program should now open with the message ready. Press send there." : "Nu skulle dit mailprogram åbne med beskeden klar. Tryk send derinde.") + "</p>" +
+        "<p><strong>" + (en ? "Nothing happened?" : "Skete der ikke noget?") + "</strong> " +
+        (en ? "Copy the message and send it from your own email to " : "Kopiér beskeden, og send den fra din egen mail til ") +
+        "<a href=\"mailto:" + EMAIL + "\">" + EMAIL + "</a>" + (en ? ", or call " : ", eller ring på ") +
+        "<a href=\"tel:" + TEL + "\">" + TEL_SHOWN.replace(/ /g, "\u00a0") + "</a>.</p>" +
+        "<button type=\"button\" class=\"btn btn-small copy-msg\">" + (en ? "Copy the message" : "Kopiér beskeden") + "</button> <span class=\"copy-status\" aria-live=\"polite\"></span>";
+      var status = done.querySelector(".copy-status");
+      done.querySelector(".copy-msg").addEventListener("click", function () {
+        var ok = function () { status.textContent = en ? "Copied. Paste it into a new email." : "Kopieret. Indsæt den i en ny mail."; };
+        var fallback = function () {
+          var ta = document.createElement("textarea"); ta.value = full; ta.setAttribute("readonly", ""); ta.style.position = "absolute"; ta.style.left = "-9999px";
+          document.body.appendChild(ta); ta.select();
+          try { document.execCommand("copy"); ok(); } catch (err) { status.textContent = en ? "Copying failed. Select the text in the form and copy it yourself." : "Kopieringen mislykkedes. Markér teksten i formularen, og kopiér den selv."; }
+          document.body.removeChild(ta);
+        };
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(full).then(ok, fallback); else fallback();
+      });
     });
     // Fejlbeskeder i egen stemme i stedet for browserens standardtekst
     var msgs = lang === "en"

@@ -704,3 +704,12 @@ main { counter-reset: sec; }
 .verdict { margin: 0 0 1rem; font-weight: 700; }
 @media (prefers-reduced-motion: reduce) { .split-bar .state, .tl-wrap .fill, .meter i, .tl li::before { transition: none !important; } }
 @media print { .cbar { display: none; } }
+
+/* Kvittering efter "Skriv mailen" med reserve til webmail */
+.form-done p { margin: 0 0 .6rem; color: var(--on-dark); }
+.form-done a { color: #fff; }
+.form-done .copy-msg { background: var(--paper); color: var(--ink); border-color: var(--paper); margin-top: .2rem; }
+.form-done .copy-status { font-size: .92rem; color: var(--on-dark-muted); margin-left: .5rem; }
+
+/* Lange danske ord i overskrifter må deles på smalle skærme */
+@media (max-width: 420px) { h1, h2, .hero-title { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; } }

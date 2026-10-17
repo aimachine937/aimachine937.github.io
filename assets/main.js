@@ -300,8 +300,8 @@
         var h = li.querySelector(".here"); if (h) h.parentNode.removeChild(h);
         if (i === idx) li.insertAdjacentHTML("beforeend", "<span class=\"here\">" + (en ? "You are here" : "I er her") + "</span>");
       });
-      var wide = window.matchMedia("(min-width: 900px)").matches, t = items[idx];
-      tl.setAttribute("data-pos", (wide ? t.offsetLeft : t.offsetTop) + "px");
+      var t = items[idx];
+      tl.setAttribute("data-pos", t.offsetTop + "px");
       if (tl.getAttribute("data-shown")) tl.style.setProperty("--fill", tl.getAttribute("data-pos"));
       var lead = document.getElementById("tl-lead");
       if (lead && now <= END) lead.textContent = sameDay(now, END)

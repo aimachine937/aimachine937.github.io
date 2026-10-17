@@ -375,9 +375,6 @@ p { margin: 0 0 1em; max-width: 64ch; }
 /* Relaterede ydelser */
 .related { padding-top: 0; }
 .related-h { font-family: inherit; font-size: 1rem; color: var(--muted); font-weight: 500; letter-spacing: 0; margin-bottom: .75rem; }
-.related-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
-.related-list a { display: inline-block; padding: .6rem .95rem; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none; font-weight: 700; font-size: .95rem; }
-.related-list a:hover { border-color: var(--ink); }
 
 /* Tilbud, eksempel */
 .offer { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.25rem, 4vw, 2.5rem); position: relative; }
@@ -656,7 +653,7 @@ main { counter-reset: sec; }
 .cbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.25rem; min-height: 3rem; padding-top: .45rem; padding-bottom: .45rem; }
 .cbar p { margin: 0; max-width: none; }
 .cbar strong { color: #fff; }
-.cbar .days { color: var(--signal); font-weight: 700; }
+.cbar .days { color: #fff; font-weight: 700; }
 .cbar a { color: #fff; font-weight: 700; margin-left: auto; min-height: 44px; display: inline-flex; align-items: center; }
 
 .split-wrap { display: grid; gap: 2rem; }
@@ -685,14 +682,7 @@ main { counter-reset: sec; }
 .tl .d { display: block; font-size: .9rem; color: var(--muted); font-variant-numeric: normal; }
 .tl h3 { margin: .1rem 0 .2rem; font-size: 1.1rem; }
 .tl p { margin: 0; color: var(--ink-2); }
-.tl .here { display: inline-block; margin-top: .4rem; font-size: .85rem; font-weight: 700; background: var(--signal); color: var(--ink); padding: .1rem .5rem; border-radius: 3px; }
-@media (min-width: 900px) {
-  .tl { grid-template-columns: repeat(6, 1fr); }
-  .tl li { padding: 2.4rem .75rem 0 0; }
-  .tl li::before { left: 0; top: 0; }
-  .tl::before { left: 7px; right: 0; top: 7px; bottom: auto; width: auto; height: 2px; }
-  .tl-wrap .fill { left: 7px; top: 7px; height: 2px; width: var(--fill, 0); transition: width 1.4s cubic-bezier(.6,0,.2,1); }
-}
+.tl .here { display: inline-block; margin-top: .4rem; font-size: .85rem; font-weight: 700; color: var(--ink); }
 
 .check-grid { display: grid; gap: 2rem; }
 @media (min-width: 820px) { .check-grid { grid-template-columns: 1.2fr 1fr; gap: 4rem; } }
@@ -723,3 +713,25 @@ main { counter-reset: sec; }
   .split-card input[type=range] { display: none; }
   .tl-wrap .fill { display: none; }
 }
+
+/* Kilder-folderen under diagrammet: samme affordance som FAQ */
+.sources { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sources summary { cursor: pointer; list-style: none; padding: 1rem 2.5rem 1rem 0; font-weight: 700; position: relative; }
+.sources summary::-webkit-details-marker { display: none; }
+.sources summary::after { content: "+"; position: absolute; right: .25rem; top: .75rem; font-size: 1.6rem; font-weight: 400; color: var(--ink); transition: transform .2s; }
+.sources[open] summary::after { transform: rotate(45deg); }
+.sources ol { margin: 0 0 1rem; padding-left: 1.25rem; }
+.sources li { margin: .35rem 0; font-size: .95rem; }
+
+/* Relaterede links som notat-række i stedet for knap-chips */
+.related-h { font-family: inherit; font-size: 1rem; font-weight: 700; margin: 0 0 .75rem; }
+.related-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1.75rem; border-top: 1px solid var(--ink); padding-top: .9rem; }
+.related-list a { display: inline-flex; align-items: center; min-height: 44px; border: 0; padding: 0; border-radius: 0; }
+
+/* Footer i navngivne kolonner */
+.foot-cols { display: grid; gap: 1.5rem 2.5rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); margin: 1rem 0 .5rem; }
+.foot-h { font-weight: 700; color: var(--on-dark); margin: 0 0 .2rem; }
+.foot-cols .foot-links { display: block; }
+.foot-cols .foot-links li { margin: 0; }
+.foot-cols .foot-links a { min-height: 36px; }
+.foot-bottom { border-top: 1px solid rgba(169,189,178,.25); padding-top: .9rem; margin-top: .5rem; }

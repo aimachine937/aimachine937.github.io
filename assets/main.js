@@ -276,8 +276,8 @@
       if (now > END) bar.hidden = true;
       else if (bt) {
         var tag = "<strong>SMV:Digital:</strong> ";
-        if (now < OPENS) bt.innerHTML = tag + (en ? "The draft opens in <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, and applications run 9 to 16 November. The state pays half of the advisory work."
-                                             : "Kladden åbner om <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, og der søges 9. til 16. november. Staten betaler halvdelen af rådgivningen.");
+        if (now < OPENS) bt.innerHTML = tag + (en ? "The draft opens in <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, and applications run 9 to 16 November. The grant is up to 150,000 DKK."
+                                             : "Kladden åbner om <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, og der søges 9. til 16. november. Tilskuddet er op til 150.000 kr.");
         else if (now < START) bt.innerHTML = tag + (en ? "The draft is open. The application window opens in <span class=\"days\">" + dd(days(now, START)) + "</span>, on 9 November."
                                                        : "Kladden er åben. Ansøgningsvinduet åbner om <span class=\"days\">" + dd(days(now, START)) + "</span>, 9. november.");
         else bt.innerHTML = tag + (en ? "The application window is open and closes in <span class=\"days\">" + dd(days(now, END)) + "</span>, on 16 November."

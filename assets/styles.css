@@ -644,3 +644,8 @@ main { counter-reset: sec; }
 /* Forsiden: H1 bærer søgeordet, sloganet står som stor tekst under */
 .hero-kicker { font-family: inherit; font-size: 1rem; font-weight: 700; line-height: 1.4; letter-spacing: 0; color: var(--fjord); margin: 0 0 1rem; max-width: none; }
 .hero-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.6rem, 7vw, 5.25rem); line-height: 1.02; letter-spacing: -0.025em; text-wrap: balance; color: var(--ink); margin: 0 0 .6em; max-width: none; }
+
+/* Nummererede trin i brancheeksempler */
+.plain-steps { list-style: none; counter-reset: ps; margin: 0 0 1.25rem; padding: 0; border-top: 1px solid var(--ink); }
+.plain-steps li { counter-increment: ps; position: relative; padding: .85rem 0 .85rem 2.6rem; border-bottom: 1px solid var(--line); }
+.plain-steps li::before { content: counter(ps); position: absolute; left: 0; top: .8rem; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--fjord); color: #fff; font-weight: 700; font-size: .9rem; display: grid; place-items: center; }

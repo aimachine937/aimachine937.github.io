@@ -810,6 +810,7 @@ main { counter-reset: sec; }
 @media (min-width: 960px) {
   .hero-bg::after { background: linear-gradient(90deg, var(--paper) 0%, rgba(246,245,241,.96) 34%, rgba(246,245,241,.55) 52%, rgba(246,245,241,.18) 68%, rgba(246,245,241,.1) 100%), linear-gradient(180deg, rgba(246,245,241,0) 0%, rgba(246,245,241,0) 62%, var(--paper) 100%); }
 }
+@media (min-width: 960px) { .hero:not(.hero-sub) .hero-grid { min-height: 48rem; } } /* plads til personen på fotoet over panelet */
 @keyframes kb { from { transform: scale(1.07); } to { transform: scale(1); } }
 
 /* Forsidens hero: teksten kommer trinvis, panelet lige efter */

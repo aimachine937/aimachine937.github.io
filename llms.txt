@@ -1,0 +1,49 @@
+# Implement AI
+
+> AI-rådgivning, AI-agenter og implementering for danske små og mellemstore virksomheder. Implement AI ApS (CVR 42538795) er godkendt rådgiver i SMV:Digital og arbejder med faste priser.
+
+Implement AI sætter AI-agenter, automatiseringer og AI-værktøjer som Microsoft Copilot op for virksomheder i Danmark. Alt bygges på kundens egne konti, et menneske godkender det, der sendes til kunder eller bogføres, og rådgivningen tager højde for GDPR og EU's AI-forordning. En AI-afklaring koster 2.200 kr. ekskl. moms, opsætning af et workflow fra 14.250 kr. og en AI-agent fra 17.100 kr. Kontakt: is@implement-ai.dk.
+
+## Forside
+- [Implement AI: AI-konsulent og rådgivning til virksomheder](https://www.implement-ai.dk/): ydelser, priser, eksempler, principper og kontakt.
+
+## Ydelser
+- [AI-agenter til virksomheder](https://www.implement-ai.dk/ai-agenter/): Vi bygger AI-agenter i Copilot Studio, ChatGPT, Claude og n8n, der løser en afgrænset opgave i jeres systemer. Fast pris fra 17.100 kr. ekskl. moms.
+- [Automatisering af arbejdsgange med AI](https://www.implement-ai.dk/automatisering/): Vi automatiserer gentagne arbejdsgange med Power Automate, Make og n8n, så data automatisk flyttes mellem mail, regneark og økonomisystem. Fast pris.
+- [Copilot til virksomheder: sikker opsætning](https://www.implement-ai.dk/copilot/): Før Copilot rulles ud, rydder vi op i adgang og deling i SharePoint og Teams, laver AI-retningslinjer og sætter licenser op. Fra 23.750 kr. ekskl. moms.
+- [SMV:Digital: op til 150.000 kr. i AI-tilskud](https://www.implement-ai.dk/smv-digital/): Godkendt SMV:Digital-rådgiver. Få 50 % i tilskud, op til 150.000 kr., til AI-analyse og implementeringsplan. Forløb fra 100.000 kr. ekskl. moms.
+- [AI-beslutningsmøde for ledelsen](https://www.implement-ai.dk/beslutningsmoede/): Halvdags beslutningsmøde for ejere og ledelse: hvor AI skaber værdi hos jer, hvilke to opgaver I starter med, og hvad det koster. Fra 23.750 kr. ekskl. moms.
+- [AI til revisorer og bogholdere](https://www.implement-ai.dk/revisorer-og-bogholdere/): AI til revisorer og bogholdere: rykkere for materiale, bilag, kundemails og årsafslutning, sat sikkert op med databehandleraftale. Faste priser.
+- [AI-politik og EU's AI-forordning for SMV'er](https://www.implement-ai.dk/ai-politik/): Hvad kræver EU's AI-forordning af en SMV efter ændringen i juli 2026? AI-færdigheder, gennemsigtighed og en AI-politik, der kan bruges i hverdagen.
+- [AI til håndværkere og servicefirmaer](https://www.implement-ai.dk/haandvaerk-og-service/): AI til håndværkere og servicevirksomheder: hurtigere tilbud, svar på henvendelser og mindre papirarbejde, sat op i jeres egne systemer til faste priser.
+- [Sådan arbejder vi, og hvad du får leveret](https://www.implement-ai.dk/samarbejde/): Faste priser, klare leverancer og fuldt ejerskab. Se hvad et samarbejde med Implement AI indeholder, og hvad du får leveret efter hver opgave.
+- [Sådan ser et tilbud fra os ud](https://www.implement-ai.dk/tilbud-eksempel/): Et eksempel på et tilbud fra Implement AI: opgave, leverancer, det der ikke er med, tidsplan, fast pris og ejerskab, alt på én side.
+
+## Viden: artikler
+- [SMV:Digital og AI: hvad dækker tilskuddet?](https://www.implement-ai.dk/viden/smv-digital-hvad-daekker-tilskuddet/): SMV:Digital dækker 50 % af rådgivning om AI. Opsætningen betales for sig. Her er reglerne, faldgruberne og hvordan I planlægger et forløb, der holder.
+- [Copilot, ChatGPT, Claude eller Gemini?](https://www.implement-ai.dk/viden/copilot-chatgpt-claude-gemini/): Det rigtige AI-værktøj afhænger først og fremmest af de systemer, I allerede bruger. En praktisk guide til valget for danske SMV'er.
+- [Før I tænder for Copilot: 6 ting at tjekke](https://www.implement-ai.dk/viden/foer-i-taender-for-copilot/): Copilot viser alt, en medarbejder har adgang til. Seks ting I skal tjekke i SharePoint, Teams og OneDrive, før I ruller Copilot ud.
+- [ChatGPT til virksomheder: pris og GDPR](https://www.implement-ai.dk/viden/chatgpt-til-virksomheder-pris-gdpr/): Hvad koster ChatGPT til virksomheder, hvilken plan har en databehandleraftale, og hvorfor er private Plus-konti en risiko? Overblik for danske SMV'er.
+- [AI-forordningens artikel 4: AI-færdigheder](https://www.implement-ai.dk/viden/ai-forordningen-artikel-4-ai-faerdigheder/): Artikel 4 kræver, at virksomheder, der bruger AI, støtter medarbejdernes AI-færdigheder. Her er reglen efter ændringen i 2026, og hvad I konkret kan gøre.
+- [AI-politik: skabelon til virksomheder](https://www.implement-ai.dk/viden/ai-politik-skabelon/): Gratis skabelon til en kort AI-politik for danske virksomheder: godkendte værktøjer, data der ikke må indtastes, GDPR, godkendelse og AI-færdigheder.
+- [Hvor går danske SMV'er i stå med AI?](https://www.implement-ai.dk/viden/hvor-gaar-danske-smv-i-staa-med-ai/): Næsten halvdelen af danske SMV'er har arbejdet med AI, men kun 10 % har implementeret det systematisk. Her er alle barriererne og kilderne bag tallene.
+- [Copilot til virksomheder: licens og pris](https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/): Hvad koster Microsoft Copilot til virksomheder i kroner, hvad kan den gratis Copilot Chat, og hvilken grundlicens kræver det? Overblik for danske SMV'er.
+
+## Øvrige sider
+
+
+## English
+- [Implement AI: AI consultant for businesses](https://www.implement-ai.dk/en/): services, prices, examples and contact in English.
+- [AI agents for businesses](https://www.implement-ai.dk/en/ai-agents/): We build AI agents in Copilot Studio, ChatGPT, Claude and n8n that solve a defined task in your systems. Fixed price from 17,100 DKK excl. VAT.
+- [Workflow automation with AI](https://www.implement-ai.dk/en/automation/): We automate repetitive workflows with Power Automate, Make and n8n so data moves by itself between email, spreadsheets and accounting. Fixed price.
+- [Copilot for businesses: secure setup](https://www.implement-ai.dk/en/copilot/): Before Copilot is rolled out, we clean up access and sharing in SharePoint and Teams, write AI guidelines and set up licences. From 23,750 DKK excl. VAT.
+- [SMV:Digital grant for AI advisory](https://www.implement-ai.dk/en/smv-digital/): Approved SMV:Digital advisor. Get a 50 % grant of up to 150,000 DKK for AI analysis and an implementation plan. Programmes from 100,000 DKK excl. VAT.
+- [AI decision meeting for leadership](https://www.implement-ai.dk/en/decision-meeting/): A half-day decision meeting for owners and leadership: where AI creates value, which two tasks to start with and what it costs. From 23,750 DKK excl. VAT.
+- [AI policy and the EU AI Act for SMEs](https://www.implement-ai.dk/en/ai-policy/): What does the EU AI Act require of an SME after the July 2026 amendment? AI literacy, transparency and an AI policy that works in daily use.
+- [How we work and what you receive](https://www.implement-ai.dk/en/working-together/): Fixed prices, clear deliverables and full ownership. See what working with Implement AI includes and what you receive after each job.
+- [What an offer from us looks like](https://www.implement-ai.dk/en/example-offer/): An example offer from Implement AI: task, deliverables, what is not included, timeline, fixed price and ownership, all on one page.
+
+## Praktisk
+- Sprog: dansk og engelsk. Område: Danmark.
+- Priser er ekskl. moms og gælder for virksomheder. Licenser og forbrug betales direkte til leverandøren.
+- Sitemap: https://www.implement-ai.dk/sitemap.xml

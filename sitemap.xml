@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/"/>
-    <image:image><image:loc>https://www.implement-ai.dk/assets/ibrahim.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/forside-vaerksted.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/ai-agenter/</loc>
@@ -17,10 +17,11 @@
   </url>
   <url>
     <loc>https://www.implement-ai.dk/ai-politik/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-politik/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-policy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-politik/"/>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/ai-politik-hero.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/automatisering/</loc>
@@ -49,7 +50,7 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/"/>
-    <image:image><image:loc>https://www.implement-ai.dk/assets/ibrahim.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/forside-vaerksted.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/en/ai-agents/</loc>
@@ -60,10 +61,11 @@
   </url>
   <url>
     <loc>https://www.implement-ai.dk/en/ai-policy/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-politik/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-policy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-politik/"/>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/ai-politik-hero.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/en/automation/</loc>
@@ -102,25 +104,29 @@
   </url>
   <url>
     <loc>https://www.implement-ai.dk/en/working-together/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/samarbejde/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/working-together/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/samarbejde/"/>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/samarbejde-hero.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/haandvaerk-og-service/</loc>
     <lastmod>2026-10-18</lastmod>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/haandvaerk-hero.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/revisorer-og-bogholdere/</loc>
     <lastmod>2026-10-18</lastmod>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/revisorer-hero.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/samarbejde/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/samarbejde/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/working-together/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/samarbejde/"/>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/samarbejde-hero.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/smv-digital/</loc>

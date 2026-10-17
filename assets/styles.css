@@ -790,3 +790,44 @@ main { counter-reset: sec; }
 .hero-photo picture, .hero-photo img { display: block; width: 100%; height: auto; }
 .hero-photo img { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--paper-2); }
 @media (max-width: 959px) { .hero-photo { margin-top: 1.5rem; } }
+
+/* Artikler: Kort fortalt-boks i heroen, byline og tættere krop */
+.key-points { margin: 1.75rem 0 0; padding: 1.2rem 1.4rem 1.25rem; background: var(--paper-2); border-left: 3px solid var(--fjord); border-radius: 0 var(--radius) var(--radius) 0; max-width: 52rem; }
+.key-points p { margin: 0 0 .55rem; font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--fjord); }
+.key-points ul { margin: 0; padding-left: 1.1rem; }
+.key-points li { margin-bottom: .4rem; line-height: 1.55; color: var(--ink-2); }
+.key-points li:last-child { margin-bottom: 0; }
+.section.article-body { padding-top: clamp(2.25rem, 5vw, 3.5rem); }
+@media print { .key-points { border: 1px solid #999; background: #fff; } }
+
+/* Forsidens hero: foto bag teksten med papirfarvet overgang, så teksten står på næsten ensfarvet bund (Pexels 34101671) */
+.hero { position: relative; }
+.hero > .wrap { position: relative; z-index: 1; }
+.hero-bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+.hero-bg picture, .hero-bg img { display: block; width: 100%; height: 100%; }
+.hero-bg img { object-fit: cover; object-position: center 62%; animation: kb 22s ease-out both; }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(246,245,241,.55) 0%, rgba(246,245,241,.82) 55%, var(--paper) 100%); }
+@media (min-width: 960px) {
+  .hero-bg::after { background: linear-gradient(90deg, var(--paper) 0%, rgba(246,245,241,.97) 40%, rgba(246,245,241,.78) 62%, rgba(246,245,241,.5) 100%), linear-gradient(180deg, rgba(246,245,241,0) 0%, rgba(246,245,241,0) 60%, var(--paper) 100%); }
+}
+@keyframes kb { from { transform: scale(1.07); } to { transform: scale(1); } }
+
+/* Forsidens hero: teksten kommer trinvis, panelet lige efter */
+.hero:not(.hero-sub) .hero-grid > div > * { animation: rise-in .65s cubic-bezier(.2,.7,.2,1) both; }
+.hero:not(.hero-sub) .hero-grid > div > :nth-child(2) { animation-delay: .07s; }
+.hero:not(.hero-sub) .hero-grid > div > :nth-child(3) { animation-delay: .16s; }
+.hero:not(.hero-sub) .hero-grid > div > :nth-child(4) { animation-delay: .24s; }
+.hero:not(.hero-sub) .hero-grid > div > :nth-child(5) { animation-delay: .32s; }
+.hero:not(.hero-sub) .hero-grid > div > :nth-child(6) { animation-delay: .38s; }
+.hero:not(.hero-sub) .hero-grid > .flow { animation: rise-in .75s cubic-bezier(.2,.7,.2,1) .3s both; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* Afsnit længere nede toner ind, første gang de rulles i syne (klassen sættes af main.js) */
+.rv { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
+.rv.in { opacity: 1; transform: none; }
+.rv:nth-child(2) { transition-delay: .07s; } .rv:nth-child(3) { transition-delay: .14s; } .rv:nth-child(4) { transition-delay: .21s; } .rv:nth-child(5) { transition-delay: .28s; } .rv:nth-child(n+6) { transition-delay: .34s; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg img, .hero:not(.hero-sub) .hero-grid > div > *, .hero:not(.hero-sub) .hero-grid > .flow { animation: none; }
+  .rv { opacity: 1; transform: none; transition: none; }
+}
+@media print { .hero-bg { display: none; } }

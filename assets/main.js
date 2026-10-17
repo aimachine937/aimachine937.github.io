@@ -156,6 +156,23 @@
         flowOl.classList.add("run");
       });
     });
+    // Eksemplerne skifter af sig selv, indtil nogen rører panelet, og kun mens det er i syne
+    var fig = flowOl.closest(".flow");
+    if (fig && "IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var order = Array.prototype.slice.call(document.querySelectorAll(".flow-tabs button")), timer = null, stopped = false;
+      var next = function () {
+        if (document.hidden) return;
+        var i = order.findIndex(function (b) { return b.getAttribute("aria-selected") === "true"; });
+        order[(i + 1) % order.length].click();
+      };
+      var stop = function () { stopped = true; if (timer) { clearInterval(timer); timer = null; } };
+      ["pointerdown", "keydown", "focusin"].forEach(function (ev) { fig.addEventListener(ev, stop); });
+      new IntersectionObserver(function (es) {
+        if (stopped) return;
+        if (es[0].isIntersecting) { if (!timer) timer = setInterval(next, 6000); }
+        else if (timer) { clearInterval(timer); timer = null; }
+      }, { threshold: .6 }).observe(fig);
+    }
     // Tastatur: piletaster flytter mellem fanerne
     var tabs = Array.prototype.slice.call(document.querySelectorAll(".flow-tabs button"));
     tabs.forEach(function (b, i) {
@@ -250,6 +267,21 @@
     document.querySelectorAll("[data-round-closed]").forEach(function (el) {
       el.textContent = el.getAttribute("data-round-closed");
     });
+  }
+
+  // Afsnit under folden toner ind, første gang de rulles i syne. Det, der allerede er i syne, står fast.
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var rvEls = Array.prototype.slice.call(document.querySelectorAll(".section-head, .example, .price-row, .price-box, .tailored, .principles-list li, .quote-card, .photo, .faq details, .tl li, .deliv .example"));
+    var fold = window.innerHeight * .85;
+    rvEls = rvEls.filter(function (el) { return el.getBoundingClientRect().top > fold; });
+    if (rvEls.length) {
+      var rio = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); rio.unobserve(e.target); } });
+      }, { threshold: .15, rootMargin: "0px 0px -6% 0px" });
+      rvEls.forEach(function (el) { el.classList.add("rv"); rio.observe(el); });
+      // Reserve: skulle noget aldrig blive observeret, vises det efter et øjeblik
+      setTimeout(function () { rvEls.forEach(function (el) { if (!el.classList.contains("in") && el.getBoundingClientRect().top < window.innerHeight) el.classList.add("in"); }); }, 2500);
+    }
   }
 
   // Diagrammer i undersidernes hero: samme tændings-animation som forsidens panel

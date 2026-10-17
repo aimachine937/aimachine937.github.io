@@ -185,24 +185,24 @@
   if (guide) {
     var G = lang === "en" ? {
       start: ["AI clarity session","A 90-minute session where we find the two or three tasks that save the most time and choose the tool. You get a written plan.","2,200 DKK excl. VAT","/en/#services"],
-      lead:  ["Leadership workshop","Half a day where owners and leadership choose the first two AI tasks, with owner, goal, budget and timeline.","from 23,750 DKK excl. VAT","/en/leadership-workshop/"],
+      lead:  ["AI decision meeting for leadership","Half a day where owners and leadership choose the first two AI tasks, with owner, goal, budget and timeline.","from 23,750 DKK excl. VAT","/en/decision-meeting/"],
       task_ms: ["AI agent or workflow setup","We build it in Copilot Studio or Power Automate, so it uses the permissions you already have in Microsoft 365. Live in 2 to 4 weeks.","from 14,250 DKK excl. VAT","/en/ai-agents/"],
       task_no: ["AI agent or workflow setup","We build it in n8n or Make with ChatGPT or Claude, so it works with Google Workspace and other systems. Live in 2 to 4 weeks.","from 14,250 DKK excl. VAT","/en/ai-agents/"],
       secure_ms: ["Secure Copilot setup","We review access and sharing in SharePoint and Teams, write your AI policy and switch Copilot on for the first group.","from 23,750 DKK excl. VAT","/en/copilot/"],
       secure_no: ["Secure AI setup","We set up ChatGPT Business, Claude Team or Gemini with access, data rules and an AI policy in place.","from 23,750 DKK excl. VAT","/en/copilot/"],
       grant: "With at least 2 full-time equivalents, the analysis and plan can be an SMV:Digital programme with a 50 % grant.",
       solo: "As a sole trader or private individual, you always get the price incl. VAT in the offer.",
-      mid: "With 10 or more staff, a leadership workshop is often the best first step, so the direction is decided before anything is built."
+      mid: "With 10 or more staff, a decision meeting for leadership is often the best first step, so the direction is decided before anything is built."
     } : {
       start: ["AI-afklaring","90 minutter, hvor vi finder de to eller tre opgaver, der sparer mest tid, og vælger værktøj. Du får en skriftlig plan.","2.200 kr. ekskl. moms","/#ydelser"],
-      lead:  ["Ledelsesworkshop","En halv dag, hvor ejere og ledelse vælger de første to AI-opgaver, med ejer, mål, budget og tidsplan.","fra 23.750 kr. ekskl. moms","/ledelsesworkshop/"],
+      lead:  ["AI-beslutningsmøde for ledelsen","En halv dag, hvor ejere og ledelse vælger de første to AI-opgaver, med ejer, mål, budget og tidsplan.","fra 23.750 kr. ekskl. moms","/beslutningsmoede/"],
       task_ms: ["Opsætning af agent eller workflow","Vi bygger i Copilot Studio eller Power Automate, så løsningen bruger de rettigheder, I allerede har i Microsoft 365. I drift på 2 til 4 uger.","fra 14.250 kr. ekskl. moms","/ai-agenter/"],
       task_no: ["Opsætning af agent eller workflow","Vi bygger i n8n eller Make med ChatGPT eller Claude, så det virker med Google Workspace og andre systemer. I drift på 2 til 4 uger.","fra 14.250 kr. ekskl. moms","/ai-agenter/"],
       secure_ms: ["Sikker Copilot-opsætning","Vi gennemgår adgang og deling i SharePoint og Teams, skriver jeres AI-politik og tænder for Copilot til den første gruppe.","fra 23.750 kr. ekskl. moms","/copilot/"],
       secure_no: ["Sikker AI-opsætning","Vi sætter ChatGPT Business, Claude Team eller Gemini op med styr på adgang, dataregler og en AI-politik.","fra 23.750 kr. ekskl. moms","/copilot/"],
       grant: "Med mindst 2 årsværk kan analysen og planen laves som et SMV:Digital-forløb med 50 % tilskud.",
       solo: "Som selvstændig eller privat får du altid prisen inkl. moms i tilbuddet.",
-      mid: "Med 10 eller flere ansatte er en ledelsesworkshop ofte det bedste første skridt, så retningen er besluttet, før noget bygges."
+      mid: "Med 10 eller flere ansatte er et beslutningsmøde for ledelsen ofte det bedste første skridt, så retningen er besluttet, før noget bygges."
     };
     var setG = function () {
       var goal = guide.goal.value, size = guide.size.value, ms = guide.ms.value !== "no";

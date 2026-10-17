@@ -631,3 +631,12 @@ main { counter-reset: sec; }
   .about > picture { position: sticky; top: 6rem; }
   .about .portrait { max-width: 360px; }
 }
+
+/* Citatkort i Om (erstatter workshopbilledet) */
+.quote-card { margin: 3.5rem 0 0; padding: 2rem 0 0; border-top: 1px solid var(--ink); display: grid; gap: 1.25rem; }
+.quote-card blockquote { margin: 0; }
+.quote-main { font-family: var(--serif); font-size: clamp(1.6rem, 3.6vw, 2.4rem); line-height: 1.2; letter-spacing: -0.015em; color: var(--ink); max-width: 30ch; margin: 0; }
+.quote-sub { margin: 1rem 0 0; font-size: 1.06rem; color: var(--ink-2); max-width: 52ch; }
+.quote-card figcaption { font-size: .95rem; font-weight: 700; color: var(--ink); }
+@media (min-width: 820px) { .quote-card { margin-left: calc(360px + 4rem); } }
+.foot-desc { color: var(--on-dark); font-weight: 500; }

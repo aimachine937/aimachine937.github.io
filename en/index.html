@@ -25,8 +25,7 @@
 <link rel="preload" href="/fonts/nr-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/sg-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/styles.css?v=b46c5747">
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -93,27 +92,35 @@
         },
         {
           "@type": "Offer",
-          "name": "Workflow mapping"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI agents and automation",
+            "url": "https://www.implement-ai.dk/en/ai-agents/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "Workflow setup"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Secure AI setup",
+            "url": "https://www.implement-ai.dk/en/copilot/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "AI agent setup"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI decision meeting for leadership",
+            "url": "https://www.implement-ai.dk/en/decision-meeting/"
+          }
         },
         {
           "@type": "Offer",
-          "name": "AI decision meeting for leadership"
-        },
-        {
-          "@type": "Offer",
-          "name": "Secure AI setup"
-        },
-        {
-          "@type": "Offer",
-          "name": "AI grant programme with SMV:Digital"
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI grant programme with SMV:Digital",
+            "url": "https://www.implement-ai.dk/en/smv-digital/"
+          }
         }
       ]
     },
@@ -159,8 +166,7 @@
       }
     }
   ]
-}
-</script>
+}</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -342,14 +348,10 @@
       <p class="lead">Every task gets a fixed price before we start. Follow the link on a service to read more.</p>
     </div>
     <ul class="prices service-list">
-      <li class="price-row"><h3>Workflow mapping</h3><p>We review your processes and deliver a prioritised list of what can be automated, with time and price estimates.</p></li>
-      <li class="price-row"><h3><a href="/en/automation/">Workflow setup</a></h3><p>A workflow automated from start to finish, so data moves by itself between email, spreadsheets, CRM and accounting.</p></li>
-      <li class="price-row"><h3><a href="/en/ai-agents/">AI agent setup</a></h3><p>An agent that solves a defined task in your systems. If you want, we run and maintain it afterwards.</p></li>
+      <li class="price-row"><h3><a href="/en/ai-agents/">AI agents and automation</a></h3><p>We map the workflow, set up the agent or automation, test it on your own tasks and hand it over for day-to-day use. Running and maintenance can be agreed afterwards.</p></li>
       <li class="price-row"><h3><a href="/en/copilot/">Secure AI setup</a></h3><p>Copilot, ChatGPT Business or Claude Team set up with access, sharing and an AI policy in order.</p></li>
       <li class="price-row"><h3><a href="/en/decision-meeting/">AI decision meeting for leadership</a></h3><p>Half a day in which the owners and the leadership team choose the first AI tasks and give each one a responsible person, a goal and a budget.</p></li>
-      <li class="price-row"><h3><a href="/en/ai-agents/">Testing and safe go-live</a></h3><p>We test the agent or workflow on your own tasks, set data boundaries and hand over the solution so your team can use it safely.</p></li>
       <li class="price-row"><h3><a href="/en/smv-digital/">AI grant programme</a></h3><p>An analysis and an implementation plan, with the state paying half through SMV:Digital. For businesses with at least 2 full-time equivalents.</p></li>
-      <li class="price-row"><h3>Ongoing advice</h3><p>A fixed monthly meeting where we follow up on what is running and agree on the next improvement.</p></li>
     </ul>
     <div class="price-box entry" id="pricing">
       <div><h3>Start with an AI clarity session</h3><p>90 minutes online or at your premises. We find the tasks where AI saves you the most time and choose the tool. You get a written plan afterwards.</p><p class="priv">The price applies to businesses.</p></div>
@@ -457,10 +459,10 @@
       <label>Phone (optional)<input name="phone" type="tel" autocomplete="tel"></label>
       <label>What is it about?
         <select name="topic">
-          <option>AI clarity session and advice</option>
-          <option>Agent setup</option>
-          <option>Workflow setup</option>
+          <option>AI clarity session</option>
+          <option>AI agents and automation</option>
           <option>Secure AI setup</option>
+          <option>AI decision meeting for leadership</option>
           <option>SMV:Digital grant</option>
           <option>Offer for another task</option>
           <option>Something else</option>

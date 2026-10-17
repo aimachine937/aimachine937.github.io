@@ -3,7 +3,6 @@
    Serif (Newsreader) til H1 og H2, Schibsted Grotesk til resten. */
 
 @font-face { font-family: "Newsreader"; src: url("../fonts/nr-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Newsreader"; src: url("../fonts/nr-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 
 @font-face { font-family: "Schibsted Grotesk"; src: url("../fonts/sg-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Schibsted Grotesk"; src: url("../fonts/sg-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
@@ -11,6 +10,7 @@
 @font-face { font-family: "Schibsted Grotesk"; src: url("../fonts/sg-800.woff2") format("woff2"); font-weight: 800; font-display: swap; }
 
 :root {
+  color-scheme: light;
   --paper: #F6F5F1;
   --paper-2: #ECEAE3;
   --paper-3: #E1DED4;
@@ -713,3 +713,13 @@ main { counter-reset: sec; }
 
 /* Lange danske ord i overskrifter må deles på smalle skærme */
 @media (max-width: 420px) { h1, h2, .hero-title { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; } }
+
+/* Linjelængde: lister følger brødtekstens 64ch på indholdssider */
+.checklist li, .article li, .plain-steps li, .article p { max-width: 64ch; }
+/* Værktøjslinjen under heroen må fylde linjen ud */
+.tools p { max-width: none; }
+@media print {
+  .split-card.pre .split-bar .state { width: var(--state, 50%); }
+  .split-card input[type=range] { display: none; }
+  .tl-wrap .fill { display: none; }
+}

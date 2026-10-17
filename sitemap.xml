@@ -9,14 +9,6 @@
     <image:image><image:loc>https://www.implement-ai.dk/assets/ibrahim.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://www.implement-ai.dk/en/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/"/>
-    <image:image><image:loc>https://www.implement-ai.dk/assets/ibrahim.jpg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://www.implement-ai.dk/ai-agenter/</loc>
     <lastmod>2026-10-17</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-agenter/"/>
@@ -24,11 +16,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-agenter/"/>
   </url>
   <url>
-    <loc>https://www.implement-ai.dk/en/ai-agents/</loc>
+    <loc>https://www.implement-ai.dk/ai-politik/</loc>
     <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-agenter/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-agents/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-agenter/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-politik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-politik/"/>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/automatisering/</loc>
@@ -38,11 +30,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/automatisering/"/>
   </url>
   <url>
-    <loc>https://www.implement-ai.dk/en/automation/</loc>
+    <loc>https://www.implement-ai.dk/beslutningsmoede/</loc>
     <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/automatisering/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/automation/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/automatisering/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/beslutningsmoede/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/decision-meeting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/beslutningsmoede/"/>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/copilot/</loc>
@@ -52,32 +44,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/copilot/"/>
   </url>
   <url>
+    <loc>https://www.implement-ai.dk/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/"/>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/ibrahim.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/ai-agents/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-agenter/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-agents/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-agenter/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/ai-policy/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-politik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-politik/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/automation/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/automatisering/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/automation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/automatisering/"/>
+  </url>
+  <url>
     <loc>https://www.implement-ai.dk/en/copilot/</loc>
     <lastmod>2026-10-17</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/copilot/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/copilot/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/copilot/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/smv-digital/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/smv-digital/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/smv-digital/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/smv-digital/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/en/smv-digital/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/smv-digital/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/smv-digital/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/smv-digital/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/beslutningsmoede/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/beslutningsmoede/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/decision-meeting/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/beslutningsmoede/"/>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/en/decision-meeting/</loc>
@@ -87,23 +87,57 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/beslutningsmoede/"/>
   </url>
   <url>
+    <loc>https://www.implement-ai.dk/en/example-offer/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/example-offer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/smv-digital/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/smv-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/smv-digital/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/smv-digital/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/working-together/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/samarbejde/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/working-together/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/samarbejde/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/haandvaerk-og-service/</loc>
+    <lastmod>2026-10-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/revisorer-og-bogholdere/</loc>
+    <lastmod>2026-10-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/samarbejde/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/samarbejde/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/working-together/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/samarbejde/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/smv-digital/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/smv-digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/smv-digital/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/smv-digital/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/tilbud-eksempel/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/example-offer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
+  </url>
+  <url>
     <loc>https://www.implement-ai.dk/viden/</loc>
-    <lastmod>2026-10-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/viden/smv-digital-hvad-daekker-tilskuddet/</loc>
-    <lastmod>2026-10-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/viden/copilot-chatgpt-claude-gemini/</loc>
-    <lastmod>2026-10-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/viden/foer-i-taender-for-copilot/</loc>
-    <lastmod>2026-10-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/viden/chatgpt-til-virksomheder-pris-gdpr/</loc>
     <lastmod>2026-10-17</lastmod>
   </url>
   <url>
@@ -115,57 +149,23 @@
     <lastmod>2026-10-17</lastmod>
   </url>
   <url>
+    <loc>https://www.implement-ai.dk/viden/chatgpt-til-virksomheder-pris-gdpr/</loc>
+    <lastmod>2026-10-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/viden/copilot-chatgpt-claude-gemini/</loc>
+    <lastmod>2026-10-17</lastmod>
+  </url>
+  <url>
     <loc>https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/</loc>
     <lastmod>2026-10-17</lastmod>
   </url>
   <url>
-    <loc>https://www.implement-ai.dk/revisorer-og-bogholdere/</loc>
+    <loc>https://www.implement-ai.dk/viden/foer-i-taender-for-copilot/</loc>
     <lastmod>2026-10-17</lastmod>
   </url>
   <url>
-    <loc>https://www.implement-ai.dk/haandvaerk-og-service/</loc>
+    <loc>https://www.implement-ai.dk/viden/smv-digital-hvad-daekker-tilskuddet/</loc>
     <lastmod>2026-10-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/ai-politik/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-politik/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-policy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-politik/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/en/ai-policy/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/ai-politik/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/ai-policy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/ai-politik/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/samarbejde/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/samarbejde/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/working-together/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/samarbejde/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/en/working-together/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/samarbejde/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/working-together/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/samarbejde/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/tilbud-eksempel/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/example-offer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
-  </url>
-  <url>
-    <loc>https://www.implement-ai.dk/en/example-offer/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/example-offer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
   </url>
 </urlset>

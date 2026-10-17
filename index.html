@@ -22,9 +22,11 @@
 <meta name="twitter:description" content="Implement AI hjælper danske SMV’er med AI-rådgivning, opsætning af AI-agenter og workflows og sikker implementering i praksis.">
 <meta name="theme-color" content="#1E5160">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/logo.png">
+<link rel="apple-touch-icon" href="/assets/logo.png">
 <link rel="preload" href="/fonts/nr-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/sg-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/styles.css?v=8d84308e">
+<link rel="stylesheet" href="/assets/styles.css?v=5d28a3b7">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -49,6 +51,7 @@
       ],
       "email": "is@implement-ai.dk",
       "telephone": "+45 26 20 27 47",
+      "sameAs": ["https://datacvr.virk.dk/enhed/virksomhed/42538795"],
       "vatID": "DK42538795",
       "taxID": "42538795",
       "areaServed": {
@@ -143,6 +146,7 @@
       "url": "https://www.implement-ai.dk/#om",
       "email": "is@implement-ai.dk",
       "telephone": "+45 26 20 27 47",
+      "sameAs": ["https://datacvr.virk.dk/enhed/virksomhed/42538795"],
       "knowsAbout": [
         "AI-agenter",
         "Microsoft 365 Copilot",
@@ -385,7 +389,7 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="h-split"><div class="wrap split-wrap"><div><h2 id="h-split">Sådan deles regningen</h2><p>Tilskuddet er 50 % af rådgiverudgiften ekskl. moms. Det udløses fra en udgift på 100.000 kr. og når sit loft ved 300.000 kr. Træk i skyderen for at se jeres andel.</p><p class="split-note">Vores forløb starter ved 100.000 kr. med ca. 70 rådgivningstimer og kan udvides op til 300.000 kr., hvor tilskuddet når 150.000 kr. Forløbet varer op til 8 måneder. Opsætning af løsninger er ikke omfattet af tilskuddet.</p><p><a href="/smv-digital/">Læs om AI-tilskudsforløbet</a></p></div><div class="split-card pre" id="split"><div class="split-bar" aria-hidden="true"><div class="state">Staten betaler</div><div class="you">I betaler</div></div><label for="spend"><strong>Rådgiverudgift:</strong> <span id="s-spend">100.000 kr.</span></label><input id="spend" type="range" min="100000" max="300000" step="10000" value="100000"><div class="split-legend" aria-live="polite"><div><span class="k">Tilskud fra staten</span><span class="v" id="s-grant"></span></div><div><span class="k">Jeres andel</span><span class="v" id="s-you"></span></div></div><p class="split-note">I lægger hele beløbet ud. Tilskuddet udbetales, når forløbet er afrapporteret.</p></div></div></section>
+<section class="section" aria-labelledby="h-split"><div class="wrap split-wrap"><div><h2 id="h-split">Sådan deles regningen</h2><p>Tilskuddet er 50 % af rådgiverudgiften ekskl. moms. Det udløses fra en udgift på 100.000 kr. og når sit loft ved 300.000 kr. Træk i skyderen for at se jeres andel.</p><p class="split-note">Vores forløb starter ved 100.000 kr. med ca. 70 rådgivningstimer og kan udvides op til 300.000 kr., hvor tilskuddet når 150.000 kr. Forløbet varer op til 8 måneder. Opsætning af løsninger er ikke omfattet af tilskuddet.</p><p><a href="/smv-digital/">Læs om AI-tilskudsforløbet</a></p></div><div class="split-card" id="split"><div class="split-bar" aria-hidden="true"><div class="state">Staten betaler</div><div class="you">I betaler</div></div><label for="spend"><strong>Rådgiverudgift:</strong> <span id="s-spend">100.000 kr.</span></label><input id="spend" type="range" min="100000" max="300000" step="10000" value="100000"><div class="split-legend" aria-live="polite"><div><span class="k">Tilskud fra staten</span><span class="v" id="s-grant">50.000 kr.</span></div><div><span class="k">Jeres andel</span><span class="v" id="s-you">50.000 kr.</span></div></div><p class="split-note">I lægger hele beløbet ud. Tilskuddet udbetales, når forløbet er afrapporteret.</p></div></div></section>
 
 <section class="section section-alt" id="forloeb" aria-labelledby="h-forloeb">
   <div class="wrap">
@@ -473,7 +477,7 @@
       <p class="contact-id">Implement AI ApS, CVR 42538795. Godkendt rådgiver i SMV:Digital.</p>
       <a class="btn btn-primary cta-signal book-direct" href="#" data-book>Vælg en tid i kalenderen</a>
     </div>
-    <form class="form" id="contact-form">
+    <form class="form" id="contact-form" action="mailto:is@implement-ai.dk" method="post" enctype="text/plain">
       <label>Navn<input name="name" autocomplete="name" required></label>
       <label>Virksomhed (valgfrit)<input name="company" autocomplete="organization"></label>
       <label>Telefon (valgfrit)<input name="phone" type="tel" autocomplete="tel"></label>
@@ -490,6 +494,7 @@
       </label>
       <label>Besked<textarea name="message" required></textarea></label>
       <button class="btn btn-primary" type="submit">Skriv mailen</button>
+      <noscript><p class="form-note"><strong>JavaScript er slået fra.</strong> Knappen åbner dit mailprogram med felterne som tekst. Du kan også skrive direkte til is@implement-ai.dk eller ringe på +45 26 20 27 47.</p></noscript>
       <p class="form-note">Knappen åbner en færdigskrevet mail til is@implement-ai.dk i dit mailprogram. Siden gemmer ingen oplysninger. Læs <a href="/privatliv.html">privatlivspolitikken</a>.</p>
     </form>
   </div>
@@ -523,6 +528,6 @@
   </div>
 </footer>
 
-<script src="/assets/main.js?v=cd3a3249" defer></script>
+<script src="/assets/main.js?v=9545b8c3" defer></script>
 </body>
 </html>

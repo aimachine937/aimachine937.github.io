@@ -25,33 +25,6 @@
     });
   }
 
-  // Priser: virksomhed (ekskl. moms) eller privat (inkl. moms)
-  var fmt = new Intl.NumberFormat(lang === "en" ? "en-GB" : "da-DK", { maximumFractionDigits: 0 });
-  var labels = {
-    da: { ex: "ekskl. moms", inc: "inkl. moms", from: "fra ", kr: " kr.", month: " kr./md.", hour: " kr./time" },
-    en: { ex: "excl. VAT", inc: "incl. VAT", from: "from ", kr: " DKK", month: " DKK/month", hour: " DKK/hour" }
-  }[lang];
-
-  function render(mode) {
-    document.querySelectorAll("[data-ex]").forEach(function (el) {
-      var ex = parseFloat(el.getAttribute("data-ex"));
-      var val = mode === "inc" ? Math.round(ex * 1.25) : ex;
-      var unit = el.getAttribute("data-unit");
-      var suffix = unit === "month" ? labels.month : unit === "hour" ? labels.hour : labels.kr;
-      var from = el.hasAttribute("data-from") ? labels.from : "";
-      el.textContent = from + fmt.format(val) + suffix;
-    });
-    document.querySelectorAll("[data-vat]").forEach(function (el) {
-      el.textContent = mode === "inc" ? labels.inc : labels.ex;
-    });
-    document.querySelectorAll(".price-toggle button").forEach(function (b) {
-      b.setAttribute("aria-pressed", b.getAttribute("data-mode") === mode ? "true" : "false");
-    });
-  }
-  document.querySelectorAll(".price-toggle button").forEach(function (b) {
-    b.addEventListener("click", function () { render(b.getAttribute("data-mode")); });
-  });
-
   // Kontaktformular: åbner en færdigskrevet mail. Ingen data sendes via siden.
   var form = document.getElementById("contact-form");
   if (form) {
@@ -286,6 +259,8 @@
     var OPENS = new Date("2026-10-26T00:00:00+01:00"), START = new Date("2026-11-09T09:00:00+01:00"), END = new Date(ROUND_END);
     var now = new Date(), reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var days = function (a, b) { return Math.max(0, Math.ceil((b - a) / 864e5)); };
+    var sameDay = function (a, b) { return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); };
+    var om = function (target) { return sameDay(now, target) ? (en ? "today" : "i dag") : (en ? "in <span class=\"days\">" + dd(days(now, target)) + "</span>" : "om <span class=\"days\">" + dd(days(now, target)) + "</span>"); };
     var dd = function (n) { return n === 1 ? (en ? "1 day" : "1 dag") : n + (en ? " days" : " dage"); };
     var fmt = function (n) { return en ? n.toLocaleString("en-GB") + " DKK" : n.toLocaleString("da-DK") + " kr."; };
 
@@ -294,12 +269,12 @@
       if (now > END) bar.hidden = true;
       else if (bt) {
         var tag = "<strong>SMV:Digital:</strong> ";
-        if (now < OPENS) bt.innerHTML = tag + (en ? "The draft opens in <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, and applications run 9 to 16 November. The grant is up to 150,000 DKK."
-                                             : "Kladden åbner om <span class=\"days\">" + dd(days(now, OPENS)) + "</span>, og der søges 9. til 16. november. Tilskuddet er op til 150.000 kr.");
-        else if (now < START) bt.innerHTML = tag + (en ? "The draft is open. The application window opens in <span class=\"days\">" + dd(days(now, START)) + "</span>, on 9 November."
-                                                       : "Kladden er åben. Ansøgningsvinduet åbner om <span class=\"days\">" + dd(days(now, START)) + "</span>, 9. november.");
-        else bt.innerHTML = tag + (en ? "The application window is open and closes in <span class=\"days\">" + dd(days(now, END)) + "</span>, on 16 November."
-                                      : "Ansøgningsvinduet er åbent og lukker om <span class=\"days\">" + dd(days(now, END)) + "</span>, 16. november.");
+        if (now < OPENS) bt.innerHTML = tag + (en ? "The draft opens " + om(OPENS) + ", and applications run 9 to 16 November. The grant is up to 150,000 DKK."
+                                             : "Kladden åbner " + om(OPENS) + ", og der søges 9. til 16. november. Tilskuddet er op til 150.000 kr.");
+        else if (now < START) bt.innerHTML = tag + (en ? "The draft is open. The application window opens " + om(START) + ", 9 November at 9:00. The grant is up to 150,000 DKK."
+                                                       : "Kladden er åben. Ansøgningsvinduet åbner " + om(START) + ", 9. november kl. 9. Tilskuddet er op til 150.000 kr.");
+        else bt.innerHTML = tag + (en ? "The application window is open and closes " + om(END) + ", 16 November at 23:55."
+                                      : "Ansøgningsvinduet er åbent og lukker " + om(END) + ", 16. november kl. 23.55.");
       }
     }
 
@@ -329,9 +304,10 @@
       tl.setAttribute("data-pos", (wide ? t.offsetLeft : t.offsetTop) + "px");
       if (tl.getAttribute("data-shown")) tl.style.setProperty("--fill", tl.getAttribute("data-pos"));
       var lead = document.getElementById("tl-lead");
-      if (lead && now <= END) lead.textContent = en
-        ? "There are " + dd(days(now, END)) + " until the deadline on 16 November. A good project description takes time, so start with the assessment now."
-        : "Der er " + dd(days(now, END)) + " til ansøgningsfristen 16. november. En god projektbeskrivelse tager tid, så start med afklaringen nu.";
+      if (lead && now <= END) lead.textContent = sameDay(now, END)
+        ? (en ? "The deadline is today, 16 November at 23:55." : "Fristen er i dag, 16. november kl. 23.55.")
+        : (en ? "There are " + dd(days(now, END)) + " until the deadline on 16 November. A good project description takes time, so start with the assessment now."
+              : "Der er " + dd(days(now, END)) + " til ansøgningsfristen 16. november. En god projektbeskrivelse tager tid, så start med afklaringen nu.");
     };
     placeTl(); window.addEventListener("resize", placeTl);
 
@@ -347,6 +323,7 @@
       boxes.forEach(function (b) { b.addEventListener("change", chk); }); chk();
     }
 
+    if (split && !reduce && "IntersectionObserver" in window) split.classList.add("pre");
     var show = function (el) {
       if (el.id === "split") el.classList.remove("pre");
       if (el.id === "tl") { el.setAttribute("data-shown", "1"); el.style.setProperty("--fill", el.getAttribute("data-pos")); }

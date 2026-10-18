@@ -96,6 +96,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/tilbud-eksempel/"/>
   </url>
   <url>
+    <loc>https://www.implement-ai.dk/en/insights/</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/insights/ai-policy-template/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/viden/ai-politik-skabelon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/insights/ai-policy-template/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/viden/ai-politik-skabelon/"/>
+  </url>
+  <url>
+    <loc>https://www.implement-ai.dk/en/insights/copilot-licence-price-businesses/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/insights/copilot-licence-price-businesses/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/"/>
+  </url>
+  <url>
     <loc>https://www.implement-ai.dk/en/smv-digital/</loc>
     <lastmod>2026-10-18</lastmod>
     <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/smv-digital/"/>
@@ -153,6 +171,9 @@
   <url>
     <loc>https://www.implement-ai.dk/viden/ai-politik-skabelon/</loc>
     <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/viden/ai-politik-skabelon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/insights/ai-policy-template/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/viden/ai-politik-skabelon/"/>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/viden/chatgpt-til-virksomheder-pris-gdpr/</loc>
@@ -165,6 +186,9 @@
   <url>
     <loc>https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/</loc>
     <lastmod>2026-10-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.implement-ai.dk/en/insights/copilot-licence-price-businesses/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/"/>
   </url>
   <url>
     <loc>https://www.implement-ai.dk/viden/foer-i-taender-for-copilot/</loc>

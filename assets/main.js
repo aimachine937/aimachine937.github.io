@@ -310,7 +310,7 @@
         else if (el.tagName === "H3") { parts.push(el.textContent.trim().toUpperCase()); }
         else { parts.push(el.textContent.trim()); parts.push(""); }
       });
-      copyText(parts.join("\n"), tpl.querySelector(".copy-status"), "Kopieret. Indsæt den i jeres eget dokument.", "Kopieringen mislykkedes. Markér teksten, og kopiér den selv.");
+      copyText(parts.join("\n"), tpl.querySelector(".copy-status"), lang === "en" ? "Copied. Paste it into your own document." : "Kopieret. Indsæt den i jeres eget dokument.", lang === "en" ? "Copying failed. Select the text and copy it yourself." : "Kopieringen mislykkedes. Markér teksten, og kopiér den selv.");
     });
   }
 

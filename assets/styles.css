@@ -811,10 +811,10 @@ main { counter-reset: sec; }
 @media (max-width: 959px) {
   .hero:not(.hero-sub) { padding-top: 20rem; }
   .hero:not(.hero-sub) .hero-bg { bottom: auto; height: 22rem; }
-  .hero:not(.hero-sub) .hero-bg img { object-position: 78% 30%; }
+  .hero:not(.hero-sub) .hero-bg img { object-position: 65% 25%; }
 }
 @media (min-width: 960px) {
-  .hero-bg::after { background: linear-gradient(90deg, var(--paper) 0%, rgba(246,245,241,.96) 34%, rgba(246,245,241,.55) 52%, rgba(246,245,241,.18) 68%, rgba(246,245,241,.1) 100%), linear-gradient(180deg, rgba(246,245,241,0) 0%, rgba(246,245,241,0) 62%, var(--paper) 100%); }
+  .hero-bg::after { background: linear-gradient(90deg, var(--paper) 0%, rgba(246,245,241,.95) 28%, rgba(246,245,241,.6) 44%, rgba(246,245,241,.22) 58%, rgba(246,245,241,.08) 100%), linear-gradient(180deg, rgba(246,245,241,0) 0%, rgba(246,245,241,0) 42%, rgba(246,245,241,.6) 66%, var(--paper) 100%); }
 }
 @media (min-width: 960px) { .hero:not(.hero-sub) .hero-grid { min-height: 48rem; } } /* plads til personen på fotoet over panelet */
 @keyframes kb { from { transform: scale(1.07); } to { transform: scale(1); } }

@@ -861,3 +861,7 @@ main { counter-reset: sec; }
 .call-steps span { display: block; font-size: .98rem; line-height: 1.5; color: #BFD0C8; }
 .promise-line { margin: 1.4rem 0 0; font-size: .95rem; color: #BFD0C8; max-width: 34rem; }
 .contact .promise-line a { color: #fff; }
+
+/* Branchelabel på forsidens eksempler kan være et link til branchesiden */
+.example .who a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: .2em; }
+.example .who a:hover { color: var(--fjord); text-decoration-color: var(--fjord); }

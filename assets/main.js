@@ -238,6 +238,7 @@
   // Beregner
   var calc = document.getElementById("calc");
   if (calc) {
+    var fmt = new Intl.NumberFormat(lang === "en" ? "en-GB" : "da-DK");
     var L = lang === "en"
       ? { kr: " DKK", pay: function (m) { return m === null ? "over 3 years" : "approx. " + m + (m === 1 ? " month" : " months"); } }
       : { kr: " kr.", pay: function (m) { return m === null ? "over 3 år" : "ca. " + m + " mdr."; } };

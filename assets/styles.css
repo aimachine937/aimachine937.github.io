@@ -844,3 +844,20 @@ main { counter-reset: sec; }
 @keyframes hl-in { to { background-size: 100% 100%; } }
 @media (prefers-reduced-motion: reduce) { .hero-title .hl { animation: none; background-size: 100% 100%; } }
 @media print { .hero-title .hl { background: none; } }
+
+/* Bredt foto under heroen på ydelsessiderne */
+.band-sec { padding: 0 0 clamp(.5rem, 2vw, 1.5rem); }
+.photo-band { margin: 0; }
+.photo-band picture, .photo-band img { display: block; width: 100%; height: auto; }
+.photo-band img { aspect-ratio: 16 / 10; object-fit: cover; border-radius: 6px; background: var(--paper-2); }
+@media (min-width: 700px) { .photo-band img { aspect-ratio: 2.4 / 1; } }
+@media print { .band-sec { display: none; } }
+
+/* Kontakt: sådan foregår samtalen, tre trin med gule tal */
+.call-steps { list-style: none; counter-reset: cs; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .85rem; max-width: 34rem; }
+.call-steps li { counter-increment: cs; display: grid; grid-template-columns: 2.2rem 1fr; column-gap: .5rem; align-items: baseline; }
+.call-steps li::before { content: counter(cs); grid-row: 1 / span 2; font-family: var(--serif); font-size: 1.75rem; line-height: 1; color: var(--signal); }
+.call-steps strong { color: #fff; }
+.call-steps span { display: block; font-size: .98rem; line-height: 1.5; color: #BFD0C8; }
+.promise-line { margin: 1.4rem 0 0; font-size: .95rem; color: #BFD0C8; max-width: 34rem; }
+.contact .promise-line a { color: #fff; }

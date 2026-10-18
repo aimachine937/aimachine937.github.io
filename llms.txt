@@ -16,6 +16,7 @@ Implement AI sætter AI-agenter, automatiseringer og AI-værktøjer som Microsof
 - [AI til revisorer og bogholdere](https://www.implement-ai.dk/revisorer-og-bogholdere/): AI til revisorer og bogholdere: rykkere for materiale, bilag, kundemails og årsafslutning, sat sikkert op med databehandleraftale. Faste priser.
 - [AI-politik og EU's AI-forordning for SMV'er](https://www.implement-ai.dk/ai-politik/): Hvad kræver EU's AI-forordning af en SMV efter ændringen i juli 2026? AI-færdigheder, gennemsigtighed og en AI-politik, der kan bruges i hverdagen.
 - [AI til håndværkere og servicefirmaer](https://www.implement-ai.dk/haandvaerk-og-service/): AI til håndværkere og servicevirksomheder: hurtigere tilbud, svar på henvendelser og mindre papirarbejde, sat op i jeres egne systemer til faste priser.
+- [AI til produktion og engros](https://www.implement-ai.dk/produktion-og-engros/): AI til produktions- og engrosvirksomheder: ordrer fra mail og PDF direkte i ERP, svar på lagerforespørgsler, leverandørfakturaer og varestamdata. Faste priser.
 - [Sådan arbejder vi, og hvad du får leveret](https://www.implement-ai.dk/samarbejde/): Faste priser, klare leverancer og fuldt ejerskab. Se hvad et samarbejde med Implement AI indeholder, og hvad du får leveret efter hver opgave.
 - [Sådan ser et tilbud fra os ud](https://www.implement-ai.dk/tilbud-eksempel/): Et eksempel på et tilbud fra Implement AI: opgave, leverancer, det der ikke er med, tidsplan, fast pris og ejerskab, alt på én side.
 

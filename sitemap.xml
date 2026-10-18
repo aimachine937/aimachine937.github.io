@@ -134,6 +134,11 @@
     <image:image><image:loc>https://www.implement-ai.dk/assets/haandvaerk-hero.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://www.implement-ai.dk/produktion-og-engros/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <image:image><image:loc>https://www.implement-ai.dk/assets/produktion-hero.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://www.implement-ai.dk/revisorer-og-bogholdere/</loc>
     <lastmod>2026-10-18</lastmod>
     <image:image><image:loc>https://www.implement-ai.dk/assets/revisorer-hero.jpg</image:loc></image:image>

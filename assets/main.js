@@ -285,10 +285,26 @@
     }
   }
 
-  // Video: den gule afspilknap starter videoen og forsvinder, mens den kører
+  // Video: den gule afspilknap starter videoen og forsvinder, mens den kører. Fanerne skifter eksempel.
   document.querySelectorAll(".video").forEach(function (fig) {
     var v = fig.querySelector("video"), b = fig.querySelector(".video-play");
     if (!v || !b) return;
+    var tabs = Array.prototype.slice.call(fig.querySelectorAll(".video-tabs button"));
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () {
+        if (t.getAttribute("aria-selected") === "true") return;
+        tabs.forEach(function (x) { x.setAttribute("aria-selected", x === t ? "true" : "false"); });
+        var n = t.getAttribute("data-video");
+        v.pause(); fig.classList.remove("playing");
+        v.setAttribute("poster", "/assets/video/" + n + "-poster.jpg");
+        v.setAttribute("aria-label", t.getAttribute("data-aria"));
+        v.querySelector('source[type="video/webm"]').setAttribute("src", "/assets/video/" + n + ".webm");
+        v.querySelector('source[type="video/mp4"]').setAttribute("src", "/assets/video/" + n + ".mp4");
+        v.querySelector("track").setAttribute("src", "/assets/video/" + t.getAttribute("data-vtt"));
+        fig.querySelector("figcaption").textContent = t.getAttribute("data-caption");
+        v.load();
+      });
+    });
     b.addEventListener("click", function () { v.play(); });
     v.addEventListener("play", function () { fig.classList.add("playing"); });
     v.addEventListener("pause", function () { if (v.ended || v.currentTime === 0) fig.classList.remove("playing"); });

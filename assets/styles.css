@@ -883,3 +883,9 @@ main { counter-reset: sec; }
 @media (max-width: 600px) { .video-play-ring { width: 4rem; height: 4rem; } .video-play-ring svg { width: 1.8rem; height: 1.8rem; } .video-play-text { font-size: .95rem; } }
 .video figcaption { margin-top: .7rem; font-size: .9375rem; color: var(--muted); max-width: 64ch; }
 @media print { .video { display: none; } }
+
+/* Faner over videoen på forsiden: vælg eksempel */
+.video-tabs { display: flex; gap: 1.25rem; margin: 0 0 1rem; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+.video-tabs button { font: inherit; font-size: .95rem; font-weight: 500; color: var(--muted); background: transparent; border: 0; border-bottom: 2px solid transparent; border-radius: 0; padding: .6rem 0; margin-bottom: -1px; cursor: pointer; min-height: 44px; white-space: nowrap; }
+.video-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 700; }
+.video-tabs button:hover { color: var(--ink); }

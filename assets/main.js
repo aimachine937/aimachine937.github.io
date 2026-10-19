@@ -285,6 +285,16 @@
     }
   }
 
+  // Video: den gule afspilknap starter videoen og forsvinder, mens den kører
+  document.querySelectorAll(".video").forEach(function (fig) {
+    var v = fig.querySelector("video"), b = fig.querySelector(".video-play");
+    if (!v || !b) return;
+    b.addEventListener("click", function () { v.play(); });
+    v.addEventListener("play", function () { fig.classList.add("playing"); });
+    v.addEventListener("pause", function () { if (v.ended || v.currentTime === 0) fig.classList.remove("playing"); });
+    v.addEventListener("ended", function () { fig.classList.remove("playing"); });
+  });
+
   // Diagrammer i undersidernes hero: samme tændings-animation som forsidens panel
   document.querySelectorAll(".flow ol").forEach(function (ol) { if (ol.id !== "flow-steps") ol.classList.add("run"); });
 

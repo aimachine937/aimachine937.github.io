@@ -272,7 +272,7 @@
 
   // Afsnit under folden toner ind, første gang de rulles i syne. Det, der allerede er i syne, står fast.
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    var rvEls = Array.prototype.slice.call(document.querySelectorAll(".section-head, .example, .price-row, .price-box, .tailored, .principles-list li, .quote-card, .photo, .faq details, .tl li, .deliv .example"));
+    var rvEls = Array.prototype.slice.call(document.querySelectorAll(".section-head, .example, .price-row, .price-box, .tailored, .principles-list li, .quote-card, .photo, .video, .faq details, .tl li, .deliv .example"));
     var fold = window.innerHeight * .85;
     rvEls = rvEls.filter(function (el) { return el.getBoundingClientRect().top > fold; });
     if (rvEls.length) {

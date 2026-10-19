@@ -865,3 +865,9 @@ main { counter-reset: sec; }
 /* Branchelabel på forsidens eksempler kan være et link til branchesiden */
 .example .who a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: .2em; }
 .example .who a:hover { color: var(--fjord); text-decoration-color: var(--fjord); }
+
+/* Video i Sådan foregår det: afspilknap, ikke autoplay */
+.video { margin: 2.5rem 0 0; }
+.video video { display: block; width: 100%; height: auto; border-radius: 6px; background: var(--night); }
+.video figcaption { margin-top: .7rem; font-size: .9375rem; color: var(--muted); max-width: 64ch; }
+@media print { .video { display: none; } }

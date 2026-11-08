@@ -29,6 +29,7 @@ Implement AI sætter AI-agenter, automatiseringer og AI-værktøjer som Microsof
 - [AI-politik: skabelon til virksomheder](https://www.implement-ai.dk/viden/ai-politik-skabelon/): Gratis skabelon til en kort AI-politik for danske virksomheder: godkendte værktøjer, data der ikke må indtastes, GDPR, godkendelse og AI-færdigheder.
 - [Hvor går danske SMV'er i stå med AI?](https://www.implement-ai.dk/viden/hvor-gaar-danske-smv-i-staa-med-ai/): Næsten halvdelen af danske SMV'er har arbejdet med AI, men kun 10 % har implementeret det systematisk. Her er alle barriererne og kilderne bag tallene.
 - [Copilot til virksomheder: licens og pris](https://www.implement-ai.dk/viden/copilot-licens-pris-virksomheder/): Hvad koster Microsoft Copilot til virksomheder i kroner, hvad kan den gratis Copilot Chat, og hvilken grundlicens kræver det? Overblik for danske SMV'er.
+- [Mærkning af AI-indhold fra 2. december 2026](https://www.implement-ai.dk/viden/maerkning-af-ai-indhold-2-december/): Fra 2. december 2026 gælder reglerne om mærkning af AI-genereret indhold fuldt ud. Her er, hvad leverandørerne skal, hvad I selv skal, og hvad almindelig markedsføring betyder.
 
 ## Øvrige sider
 
